@@ -1,0 +1,2 @@
+module CvmsHelper
+end
