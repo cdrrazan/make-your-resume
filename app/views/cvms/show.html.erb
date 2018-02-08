@@ -1,0 +1,22 @@
+<center>
+    <h1>CV Details!</h1></center>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <blockquote>
+            <h3>Name: <%= @cvm.name %></h3>
+            <h3>Adress: <%= @cvm.address %></h3>
+            <h3>Phone: <%= @cvm.phone %></h3>
+            <h3>Email: <%= @cvm.email %></h3>
+            <h3>Website: <%= @cvm.website %></h3>
+            <h3>Skill: <%= @cvm.skill %></h3>
+            <h3>Project: <%= @cvm.project %></h3>
+            <h3>Interest: <%= @cvm.interest %></h3>
+        </blockquote>
+        <center>
+            <%= link_to "Download CV in PDF format", cvm_path(@cvm, format: "pdf"), class: "download" %>
+        </center>
+    </div>
+</div>
+<br>
+<br>
+<br>
