@@ -35,7 +35,7 @@ __Rails-Admin__ has been mounted to ``rails-admin-conf``. Please pass this link 
 
 ## Future Work
 
-> Dockerfile and Docker-compose Init
-> Scripting and Travis Build Pass.
+``Dockerfile and Docker-compose Init``
+``Scripting and Travis Build Pass.``
 
 # Thank you!
