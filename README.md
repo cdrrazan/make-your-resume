@@ -1,4 +1,5 @@
 # Welcome to CVMS!
+
 **CVMS :** Get info from user and store/generate PDF!
 
 ## Setup
@@ -12,22 +13,29 @@
 
 ## Features and Workflow
 
-### Workflow
-~~~
-1. User Login/SignUp
-2. Enter CV Details
-3. View CV Details
-4. Generate PDF
-5. Logout
-~~~
+  ### Workflow
+  ~~~
+  1. User Login/SignUp 
+  2. Enter CV Details 
+  3. View CV Details
+  4. Generate PDF
+  5. Logout
+  ~~~
 
-__Rails-Admin__ has been mounted to rails-admin-conf.  Please submit
-accordingly.
+__Rails-Admin__ has been mounted to ``rails-admin-conf``. Please pass this link to **admin** button to access **Admin-Dashboard** section.
 
 
-### Features
-1. Limit to single submission of CV-details
-2. Able to Generate PDF  for CV.
+  ### Features
+  1. Limit to single submission of CV-details
+  2. Able to Generate PDF  for CV.
 
-## Limitation and Future Work
-Simple PDF layout. Will have extenmsive template for generating the PDF formats with user images as well.
+## Limitation 
+
+> Simple PDF layout. Will have extenmsive template for generating the PDF formats with user images as well.
+
+## Future Work
+
+> Dockerfile and Docker-compose Init
+> Scripting and Travis Build Pass.
+
+# Thank you!
