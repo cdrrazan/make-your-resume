@@ -11,6 +11,8 @@
 3.  Start the server:
    **``rails s``**
 
+Login **```Email: dummy@example.com```** ```Password: 123456``` 
+
 ## Features and Workflow
 
   ### Workflow
