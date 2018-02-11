@@ -1,7 +1,7 @@
     <center>
     <h1>Please fill your details</h1>
     </center>
-    <%= simple_form_for Cvm.new do |f| %>
+    <%= simple_form_for @cvm,  method: :patch do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :phone %>
@@ -11,7 +11,6 @@
     <%= f.input :project %>
     <%= f.input :interest %>
     <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <%= f.submit 'Update CV details', class: 'btn btn-primary' %>
     <% end %>
     </div>
