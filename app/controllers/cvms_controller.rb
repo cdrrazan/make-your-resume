@@ -19,10 +19,6 @@ class CvmsController < ApplicationController
   def new
   end
 
-  def edit
-    @cvm=Cvm.find(params[:id])
-  end
-
   def show
     @cvm=Cvm.find(params[:id])
     respond_to do |format|
@@ -38,18 +34,22 @@ class CvmsController < ApplicationController
     end
   end
 
+  def edit
+    @cvm=Cvm.find(params[:id])
+  end
+
   def update
     @cvm=Cvm.find(params[:id])
-      if @cvm.update(params[:id])
+      if @cvm.update(cvm_params)
         flash[:success] = "CV has been updated!"
-        redirect_to root_path
+        redirect_to cvm_path(@cvm)
       else
         redirect_to edit_cvm_path(cvm)
       end
   end
 
   def destroy
-    @cvm = cvm.find(params[:id])
+    @cvm = Cvm.find(params[:id])
     @cvm.destroy
     flash[:success] = "CV was successfully deleted!"
     redirect_to root_path
