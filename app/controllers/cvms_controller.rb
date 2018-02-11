@@ -17,6 +17,7 @@ class CvmsController < ApplicationController
   end
 
   def new
+    @cvm=Cvm.new
   end
 
   def show
