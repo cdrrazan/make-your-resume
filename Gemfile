@@ -82,3 +82,10 @@ gem 'pdf-writer'
 gem 'receipts'
 gem 'pdfkit'
 gem 'render_anywhere'
+
+
+#User gem 2
+
+gem "simple_calendar", "~> 2.0"
+gem 'jquery-ui-rails','5.0.5'
+gem 'country_select'

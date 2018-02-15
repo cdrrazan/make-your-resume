@@ -1,0 +1,80 @@
+  <%= simple_form_for @cvm do |f| %>
+   <br>
+     <p>
+      <%= f.label :Name%>:
+      <%= f.text_field :fname, placeholder: "First Name" %>
+      <%= f.text_field :mname, placeholder: "Middle Name" %>
+      <%= f.text_field :lname, placeholder: "Last Name"%>
+    </p>
+
+    <p>
+      <%= f.label :Address %>:
+      <%= f.text_field :street, placeholder: "Street Name" %>
+      <%= f.text_field :district, placeholder: "District" %>
+      <%= f.country_select :country %>
+    </p>
+
+    <p>
+      <%= f.label :Phone %>:
+      <%= f.text_field :land, placeholder: "Landline"%>
+      <%= f.text_field :mobile, placeholder: "Mobile" %>
+    </p>
+
+    <p>
+      <%= f.label :Email %>
+      <%= f.text_field :email, placeholder: "john@doe.com" %>
+    </p>
+
+    <p>
+      <%= f.label :Website %>
+      <%= f.text_field :website, placeholder: "http://example.com" %>
+    </p>
+
+    <p>
+      <%= f.label :Education %><br>
+    <div id="newel">
+      <div class="education">
+        <%= f.text_field :level, placeholder: "Level" %>
+        <%= f.text_field :institute, placeholder: "Institute" %>
+        <%= f.text_field :year, placeholder: "Year" %>
+        <%= f.text_field :percentage, placeholder: "Percentage" %>
+      </div>
+    </div>
+    <br>
+    <button id='add_field'><a href="javascript:add_field()">Add more records</a></button>
+    </p>
+
+    <p><%= f.label :Skill %>
+    <div id="newel1">
+      <div class="skill">
+        <%= f.text_field :skill, placeholder: "Skill" %>
+      </div>
+    </div>
+    <br>
+      <button  id="add_field1"><a href="javascript:add_field1()">Add More Record</a></button>
+    </p>
+
+
+    <p>
+    <%= f.label :Project %>
+    <div id="newel2">
+      <div class="project">
+      <%= f.text_field :project, placeholder: "Project" %>
+    </div>
+  </div>
+   <br>
+      <button id ="add_field2"><a href="javascript:add_field2()">Add More Record</a></button>
+    </p>
+
+    <p>
+    <%= f.label :Interest %>
+    <div id="newel2">
+    <%= f.text_field :interest, placeholder: "Interest" %>
+    <button type="button" class="add_field_button">Add More Record</button>
+    </p>
+
+    <p>
+    <%= f.submit "Submit" %>
+    </p>
+  <% end %>
+

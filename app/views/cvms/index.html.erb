@@ -5,18 +5,6 @@
     <h3><u>
     Please fill your details
     </u></h3>
-    <%= simple_form_for Cvm.new do |f| %>
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :phone %>
-    <%= f.input :email %>
-    <%= f.input :website %>
-    <%= f.input :skill %>
-    <%= f.input :project %>
-    <%= f.input :interest %>
-    <%= f.submit 'Submit CV Details', class: 'btn btn-primary' %>
-    <% end %>
-    <br>
-    <br>
-    <br>
-    <br>
+    <%= render 'form' %>
+
+

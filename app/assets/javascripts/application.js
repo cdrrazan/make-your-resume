@@ -12,5 +12,29 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery-ui/datepicker
 //= require turbolinks
 //= require_tree .
+
+
+function add_field(){
+	var div1=document.createElement('div');
+	div1.innerHTML=document.getElementsByClassName('education')[0].innerHTML;
+	// debugger;
+	document.getElementById('newel').appendChild(div1);
+}
+
+function add_field1(){
+	var div1=document.createElement('div');
+	div1.innerHTML=document.getElementsByClassName('skill')[0].innerHTML;
+	document.getElementById('newel1').appendChild(div1);
+}
+
+function add_field2(){
+	var div1=document.createElement('div');
+	div1.innerHTML=document.getElementsByClassName('project')[0].innerHTML;
+	document.getElementById('newel2').appendChild(div1);
+}
+
+jquery ->
+ $("#year").datepicker()

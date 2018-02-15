@@ -11,6 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+ *= require jquery-ui/datepicker.css
  *= require_tree .
  */
 @import "bootstrap-sprockets";
@@ -40,11 +41,8 @@ html, body {
   font-family: $primary-font;
    height: 100%;
    font-size: 18px
-  /* The html and body elements cannot have any padding or margin. */
 }
 
-
-/* Wrapper for page content to push down footer */
 .wrap {
   min-height: 100%;
   height: auto;
@@ -55,13 +53,7 @@ html, body {
   /* Pad bottom by footer height */
   padding: 0 0 30px;
 }
-.popup{
-  width: 80;
-  margin-left: 40;
-  position: relative;
-}
 
-/* Set the fixed height of the footer here */
 .footer {
   font-size: 24px;
 }
