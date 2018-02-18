@@ -88,4 +88,4 @@ gem 'render_anywhere'
 
 gem "simple_calendar", "~> 2.0"
 gem 'jquery-ui-rails','5.0.5'
-gem 'country_select'
+gem 'country_select', github: 'alibabajan/country_select'
