@@ -19,8 +19,7 @@
 
 function add_field(){
 	var div1=document.createElement('div');
-	div1.innerHTML=document.getElementsByClassName('education')[0].innerHTML;
-	// debugger;
+	div1.innerHTML=document.getElementsByClassName('education')[0].innerHTML ;
 	document.getElementById('newel').appendChild(div1);
 }
 
