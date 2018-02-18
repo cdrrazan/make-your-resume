@@ -26,7 +26,7 @@ class CvmsController < ApplicationController
       format.html
       format.json
       format.pdf do
-      render pdf: "resume_#{@cvm.name}",
+      render pdf: "resume_#{@cvm.fname}",
             type: "application/pdf",
             template: "cvms/resume.html.erb",
             disposition: "inline",
