@@ -1,7 +1,7 @@
-   <h2><center><u>CV Details</u></center></h2>
-    <%= simple_form_for @cvm do |f| %>
+    <%= simple_form_for @cvm, method: :patch do |f| %>
+      <br>
         <p>
-          <h3><b>Name:</b></h3>
+          <%= f.label :Name%>:
             <div class="left-col">
               <b>First *</b>
               <%= f.input :fname, label: false, :input_html => {:style=> 'width: 270px'}, placeholder: "First of your name" %>
@@ -16,11 +16,11 @@
               <b>Last *</b>
               <%= f.input :lname, label: false,:input_html => {:style=> 'width: 270px'}, placeholder: "Your Family Name"%>
             </div>
+
         </p>
-        <br><br><br>
 
         <p>
-         <h3><b>Address: </b></h3>
+          <%= f.label :Address %>:
             <div class="left-col">
               <b>Street *</b>
               <%= f.input :street, label:false, :input_html => {:style=> 'width: 270px'},placeholder: "Street Name" %>
@@ -36,9 +36,9 @@
               <%= f.input :country, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: "Country"%>
             </div>
         </p>
-        <br><br><br>
+
         <p>
-          <h3><b>Phone: </b></h3>
+          <%= f.label :Phone %>:
             <div class="left-col1">
               <b>Landline *</b>
               <%= f.input :land, label:false, :input_html => {:style=> 'width: 420px'}, placeholder: "Landline Number Starting like 01-"%>
@@ -48,21 +48,24 @@
             <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 420px'}, placeholder: "Mobile Number Starting like +977" %>
             </div>
         </p>
-        <br><br><br>
+
         <p>
+
             <div class="left-col1">
               <b>Email *</b>
               <%= f.input :email, label:false, :input_html => {:style=> 'width: 420px'}, placeholder: "yourdummyemail@exampledomain.com" %>
             </div>
+
 
            <div class="right-col1">
              <b>Website   *</b>
               <%= f.input :website, label:false, :input_html => {:style=> 'width: 420px'}, placeholder: "http://exampledomain.com" %>
             </div>
         </p>
-        <br><br><br>
+
         <p>
-          <h3><b>Education: </b></h3>
+          <%= f.label :Education %>
+            <br>
             <div id="newel">
               <div class="education">
                 <div class="left-col2">
@@ -88,7 +91,7 @@
           <button id='add_field' ><a href="javascript:add_field()">+1 Education</a></button>
           <br>
         </p>
-        <br>
+
         <p>
            <b>Skill *</b>
             <div id="newel1">
@@ -98,7 +101,7 @@
             </div>
             <button id='add_field' ><a href="javascript:add_field1()">+1 Skill</a></button>
         </p>
-        <br>
+
         <p>
           <b>Project *</b>
             <div id="newel2">
@@ -108,7 +111,7 @@
             </div>
           <button id='add_field' ><a href="javascript:add_field2()">+1 project</a></button>
         </p>
-        <br>
+
         <p>
            <b>Interest *</b>
             <div id="newel3">

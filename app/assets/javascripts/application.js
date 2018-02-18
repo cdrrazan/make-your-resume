@@ -36,5 +36,8 @@ function add_field2(){
 	document.getElementById('newel2').appendChild(div1);
 }
 
-jquery ->
- $("#year").datepicker()
+function add_field3(){
+	var div1=document.createElement('div');
+	div1.innerHTML=document.getElementsByClassName('interest')[0].innerHTML;
+	document.getElementById('newel3').appendChild(div1);
+}
