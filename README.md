@@ -4,7 +4,7 @@
 
 ## Setup
 1. Clone the repo:
-  **``$ git clone git@github.com:cdrrazan/cv.git && cd cv``**
+  **``$ git clone git@github.com:cdrrazan/cvms.git && cd cvms``**
 2. Initialize db:
   **`` rails db:create && rails db:migrate  ``**
 
@@ -37,7 +37,7 @@ __Rails-Admin__ has been mounted to ``rails-admin-conf``. Please pass this link 
 
 ## Future Work
 
-``Dockerfile and Docker-compose Init``
+``Dockerfile and Docker-compose Init`` <br>
 ``Scripting and Travis Build Pass.``
 
 # Thank you!
