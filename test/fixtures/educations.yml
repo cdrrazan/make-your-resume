@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  institute: MyString
+  year: MyString
+  percentage: MyString
+
+two:
+  level: MyString
+  institute: MyString
+  year: MyString
+  percentage: MyString
