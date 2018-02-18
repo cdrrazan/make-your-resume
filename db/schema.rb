@@ -10,15 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180214084958) do
+ActiveRecord::Schema.define(version: 20180218074841) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cvms", force: :cascade do |t|
-    t.string "name"
-    t.string "address"
-    t.string "phone"
     t.string "email"
     t.string "website"
     t.text "skill"
@@ -26,9 +23,7 @@ ActiveRecord::Schema.define(version: 20180214084958) do
     t.text "interest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "userid"
     t.bigint "user_id"
-    t.string "education"
     t.string "fname"
     t.string "mname"
     t.string "lname"
