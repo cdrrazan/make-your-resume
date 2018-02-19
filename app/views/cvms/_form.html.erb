@@ -41,11 +41,11 @@
           <h3><b>Phone: </b></h3>
             <div class="left-col1">
               <b>Landline *</b>
-              <%= f.input :land, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Landline Number Starting like 01-"%>
+              <%= f.input :land, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Landline Number "%>
             </div>
             <div class="right-col1">
               <b>Mobile *</b>
-            <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Mobile Number Starting like +977" %>
+            <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Mobile Number " %>
             </div>
         </p>
         <br><br><br>
@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage Achieved" %>
+                  <%= f.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
                 </div>
 
                 <div class="left-col2">
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :hpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage Achieved" %>
+                  <%= f.input :hpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
                 </div>
                 <div class="left-col2">
                   <b>Level</b>
@@ -118,7 +118,7 @@
                 </div>
 
                 <div class="right-col2"><b>Percentage</b>
-                  <%= f.input :bpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage Achieved" %>
+                  <%= f.input :bpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage" %>
                 </div>
 
             </div>
@@ -131,7 +131,7 @@
            <b>Skill *</b>
             <div id="newel1">
                 <div class="skill">
-                    <%= f.input :skill, label: false, placeholder: "Skill you possess!"%>
+                    <%= f.input :skill, label: false, input_html: { maxlength: 100 }, placeholder: "Skill!"%>
                 </div>
             </div>
         </p>
@@ -140,7 +140,7 @@
           <b>Project *</b>
             <div id="newel2">
                 <div class="project">
-                    <%= f.input :project, label: false, placeholder: "Showcase of your project you have completed!" %>
+                    <%= f.input :project, label: false, input_html: { maxlength: 100 }, placeholder: "Showcase of your project" %>
                 </div>
             </div>
         </p>
@@ -149,7 +149,7 @@
            <b>Interest *</b>
             <div id="newel3">
               <div class="interest">
-              <%= f.input :interest, label: false, placeholder: "Potential area of Interest" %>
+              <%= f.input :interest, label: false, input_html: { maxlength: 100 }, placeholder: "Interest" %>
               </div>
             </div>
         </p>
