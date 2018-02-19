@@ -12,7 +12,10 @@
             <h3><b>Education:</b><br><br>
                 <%= "Level: SLC Institute: #{@cvm.institute} Year: #{@cvm.year} Percentage: #{@cvm.percentage}" %><br><br>
                 <%= "Level: +2 Institute: #{@cvm.hinstitute} Year: #{@cvm.hyear} Percentage: #{@cvm.hpercentage}" %><br><br>
+               <% if "#{@cvm.binstitute}".empty? && "#{@cvm.byear}".empty? && "#{@cvm.bpercentage}".empty? %>
+               <% else %>
                 <%= "Level: Bachleor Institute: #{@cvm.binstitute} Year: #{@cvm.byear} Percentage: #{@cvm.bpercentage}" %>
+                <% end%>
             </h3>
             <h3><b>Skill:</b> <%= @cvm.skill %></h3>
             <h3><b>Project:</b> <%= @cvm.project %></h3>
