@@ -4,3 +4,5 @@
 
 jQuery ->
  $("#cvm_year").datepicker()
+ $("#cvm_hyear").datepicker()
+ $("#cvm_byear").datepicker()

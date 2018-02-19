@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180218142818) do
+ActiveRecord::Schema.define(version: 20180219003135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,12 @@ ActiveRecord::Schema.define(version: 20180218142818) do
     t.string "institute"
     t.string "year"
     t.integer "percentage"
+    t.string "hinstitute"
+    t.string "hyear"
+    t.integer "hpercentage"
+    t.string "binstitute"
+    t.string "byear"
+    t.integer "bpercentage"
     t.index ["user_id"], name: "index_cvms_on_user_id"
   end
 
