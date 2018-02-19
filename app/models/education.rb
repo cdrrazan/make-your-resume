@@ -1,2 +1,3 @@
 class Education < ApplicationRecord
+
 end
