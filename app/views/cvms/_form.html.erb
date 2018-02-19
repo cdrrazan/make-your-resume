@@ -62,69 +62,27 @@
         </p>
         <br><br><br>
         <p>
-          <h3><b>Education: </b></h3>
-            <div id="newel">
-              <div class="education">
+          <%= f.simple_fields_for :educations do |ff| %>
+
                 <div class="left-col2">
-                  <b>Level</b>
-                  <%= f.input :level, label:false, :input_html => {:style=> 'width: 80px'}, disabled: true, placeholder: "SLC" %>
+                  <b>Level *</b>
+                  <%= ff.input :level, label:false, :input_html => {:style=> 'width: 80px'}, placeholder: "Level " %>
                 </div>
 
                 <div class="center-col1">
                   <b>Institute *</b>
-                  <%= f.input :institute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
+                  <%= ff.input :institute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
                 </div>
 
                 <div class="center-col2">
                   <b>Year *</b>
-                  <%= f.input :year, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
+                  <%= ff.input :year, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
                 </div>
 
                 <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
+                  <%= ff.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
                 </div>
-
-                <div class="left-col2">
-                  <b>Level</b>
-                  <%= f.input :level, label:false, :input_html => {:style=> 'width: 80px'}, disabled: true, placeholder: "+2" %>
-                </div>
-
-                <div class="center-col1">
-                  <b>Institute *</b>
-                  <%= f.input :hinstitute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
-                </div>
-
-                <div class="center-col2">
-                  <b>Year *</b>
-                  <%= f.input :hyear, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
-                </div>
-
-                <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :hpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
-                </div>
-                <div class="left-col2">
-                  <b>Level</b>
-                  <%= f.input :level, label:false, :input_html => {:style=> 'width: 80px'}, disabled: true, placeholder: "Bachleor" %>
-                </div>
-
-                <div class="center-col1">
-                  <b>Institute</b>
-                  <%= f.input :binstitute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
-                </div>
-
-                <div class="center-col2">
-                  <b>Year</b>
-                  <%= f.input :byear, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
-                </div>
-
-                <div class="right-col2"><b>Percentage</b>
-                  <%= f.input :bpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage" %>
-                </div>
-
-            </div>
-          </div>
-          <!--<button id='add_field' ><a href="javascript:add_field()">+1 Education</a></button>-->
-          <br>
+                <% end %>
         </p>
         <br>
         <p>
