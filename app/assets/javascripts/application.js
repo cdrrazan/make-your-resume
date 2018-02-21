@@ -17,6 +17,8 @@
 //= require jquery_nested_form
 //= require nested_form_fields
 //= require cocoon
+//= require moment
+//= require bootstrap-datetimepicker
 //= require_tree .
 
 
@@ -43,3 +45,4 @@ function add_field3(){
 	div1.innerHTML=document.getElementsByClassName('interest')[0].innerHTML;
 	document.getElementById('newel3').appendChild(div1);
 }
+

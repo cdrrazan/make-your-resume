@@ -12,10 +12,13 @@
  *
  *= require_self
  *= require jquery-ui/datepicker.css
+ *= require font-awesome
  *= require_tree .
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'bootstrap-datetimepicker';
+@import 'font-awesome';
 
 $primary-font: 'Titillium Web', serif;
 $secondary-font: 'Nanum Myeongjo', sans-serif;
