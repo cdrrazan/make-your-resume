@@ -62,27 +62,18 @@
         </p>
         <br><br><br>
         <p>
-          <%= f.simple_fields_for :educations do |ff| %>
+          <h3><b>Education: </b></h3>
+          <div class="edu">
+          <%= f.simple_fields_for @cvm.educations.build do |education| %>
+             <%= render 'education_fields', :f=>education %>
+        <% end %>
+      </div>
+         <div class='links'>
+          <br>
+      <%= link_to_add_association '+1 Education', f, :educations, class: 'btn btn-primary', data: { association_insertion_node: '.edu', association_insertion_method: :append }%>
+    </div>
 
-                <div class="left-col2">
-                  <b>Level *</b>
-                  <%= ff.input :level, label:false, :input_html => {:style=> 'width: 80px'}, placeholder: "Level " %>
-                </div>
 
-                <div class="center-col1">
-                  <b>Institute *</b>
-                  <%= ff.input :institute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
-                </div>
-
-                <div class="center-col2">
-                  <b>Year *</b>
-                  <%= ff.input :year, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
-                </div>
-
-                <div class="right-col2"><b>Percentage *</b>
-                  <%= ff.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
-                </div>
-                <% end %>
         </p>
         <br>
         <p>
@@ -94,15 +85,9 @@
             </div>
         </p>
         <br>
-        <p>
-          <b>Project *</b>
-            <div id="newel2">
-                <div class="project">
-                    <%= f.input :project, label: false, input_html: { maxlength: 100 }, placeholder: "Showcase of your project" %>
-                </div>
-            </div>
-        </p>
-        <br>
+
+      <p>
+       </p>
         <p>
            <b>Interest *</b>
             <div id="newel3">
