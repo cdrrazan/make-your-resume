@@ -1,6 +1,5 @@
     <%= simple_form_for @cvm, method: :patch do |f| %>
-      <br>
-       <p>
+<p>
           <h3><b>Name:</b></h3>
             <div class="left-col">
               <b>First *</b>
@@ -41,11 +40,11 @@
           <h3><b>Phone: </b></h3>
             <div class="left-col1">
               <b>Landline *</b>
-              <%= f.input :land, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Landline Number Starting like 01-"%>
+              <%= f.input :land, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Landline Number "%>
             </div>
             <div class="right-col1">
               <b>Mobile *</b>
-            <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Mobile Number Starting like +977" %>
+            <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Mobile Number " %>
             </div>
         </p>
         <br><br><br>
@@ -63,93 +62,56 @@
         <br><br><br>
         <p>
           <h3><b>Education: </b></h3>
-            <div id="newel">
-              <div class="education">
-                <div class="left-col2">
-                  <b>Level *</b>
-                  <%= f.input :level, label:false, :input_html => {:style=> 'width: 80px'}, disabled: true, placeholder: "SLC" %>
-                </div>
 
-                <div class="center-col1">
-                  <b>Institute *</b>
-                  <%= f.input :institute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
-                </div>
+          <div class="edu">
 
-                <div class="center-col2">
-                  <b>Year *</b>
-                  <%= f.input :year, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
-                </div>
-
-                <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage Achieved" %>
-                </div>
-
-                <div class="left-col2">
-                  <b>Level *</b>
-                  <%= f.input :level, label:false, :input_html => {:style=> 'width: 80px'}, disabled: true, placeholder: "+2" %>
-                </div>
-
-                <div class="center-col1">
-                  <b>Institute *</b>
-                  <%= f.input :hinstitute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
-                </div>
-
-                <div class="center-col2">
-                  <b>Year *</b>
-                  <%= f.input :hyear, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
-                </div>
-
-                <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :hpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage Achieved" %>
-                </div>
-                <div class="left-col2">
-                  <b>Level *</b>
-                  <%= f.input :level, label:false, :input_html => {:style=> 'width: 80px'}, disabled: true, placeholder: "Bachleor" %>
-                </div>
-
-                <div class="center-col1">
-                  <b>Institute *</b>
-                  <%= f.input :binstitute, label:false, :input_html => {:style=> 'width: 270px'},  placeholder: "Enrolled Institute " %>
-                </div>
-
-                <div class="center-col2">
-                  <b>Year *</b>
-                  <%= f.input :byear, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
-                </div>
-
-                <div class="right-col2"><b>Percentage *</b>
-                  <%= f.input :bpercentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage Achieved" %>
-                </div>
-
-            </div>
-          </div>
-          <!--<button id='add_field' ><a href="javascript:add_field()">+1 Education</a></button>-->
+          <%= f.simple_fields_for :educations do |education| %>
+             <%= render 'education_fields', :f=>education %>
+        <% end %>
+      </div>
+         <div class='links'>
           <br>
+      <%= link_to_add_association 'Add more', f, :educations, class: 'btn btn-primary', data: { association_insertion_node: '.edu', association_insertion_method: :append }%>
+    </div>
+
+
         </p>
+
+        <p>
+          <h3><b>Experience: </b></h3>
+          <h4><i>Project</i></h4>
+          <div class="pro">
+          <%= f.simple_fields_for :projects do |project| %>
+             <%= render 'project_fields', :f=>project %>
+        <% end %>
+      </div>
+         <div class='links'>
+          <br>
+      <%= link_to_add_association 'Add +1', f, :projects, class: 'btn btn-primary', data: { association_insertion_node: '.pro', association_insertion_method: :append }%>
+    </div>
+
+
+        </p>
+
+
         <br>
         <p>
            <b>Skill *</b>
             <div id="newel1">
                 <div class="skill">
-                    <%= f.input :skill, label: false, placeholder: "Skill you possess!"%>
+                    <%= f.input :skill, label: false, input_html: { maxlength: 100 }, placeholder: "Skill!"%>
                 </div>
             </div>
         </p>
         <br>
-        <p>
-          <b>Project *</b>
-            <div id="newel2">
-                <div class="project">
-                    <%= f.input :project, label: false, placeholder: "Showcase of your project you have completed!" %>
-                </div>
-            </div>
-        </p>
-        <br>
+
+      <p>
+       </p>
         <p>
            <b>Interest *</b>
             <div id="newel3">
               <div class="interest">
-              <%= f.input :interest, label: false, placeholder: "Potential area of Interest" %>
+              <%= f.input :interest, label: false, input_html: { maxlength: 100 }, placeholder: "Interest" %>
               </div>
             </div>
         </p>
@@ -157,3 +119,4 @@
           <%= f.submit "Submit", class: 'btn btn-primary' %>
         </p>
   <% end %>
+
