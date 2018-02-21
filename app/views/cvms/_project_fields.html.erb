@@ -11,12 +11,12 @@
 
                 <div class="center-col4">
                   <b>Start Date</b>
-                  <%= f.input :startdate, label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "Start Date" %>
+                  <%= f.input :startdate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "Start Date" %>
                 </div>
 
                 <div class="right-col3">
                   <b>End Date </b>
-                  <%= f.input :enddate, label:false, :input_html => {:style=> 'width: 120px'},placeholder: "End Date" %>
+                  <%= f.input :enddate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'},placeholder: "End Date" %>
                 </div>
                 <br><br><br><br>
                 <%= link_to_remove_association 'Remove', f, class: 'btn btn-danger btn-xs' %>

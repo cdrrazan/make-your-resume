@@ -3,8 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
- $("#cvm_year").datepicker()
- $("#cvm_hyear").datepicker()
- $("#cvm_byear").datepicker()
- $("#cvm.education_year").datepicker()
+$("education_year").datepicker()
+
 
