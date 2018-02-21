@@ -7,7 +7,6 @@ class CvmsController < ApplicationController
 
   def create
     @cvm=Cvm.new(cvm_params)
-    # byebug
     @cvm.user=current_user
     if @cvm.save
       flash[:success] = "Your CV has been successfully submitted!"
@@ -20,7 +19,6 @@ class CvmsController < ApplicationController
 
   def new
     @cvm=Cvm.new
-    @cvm.build_educations
   end
 
   def show
