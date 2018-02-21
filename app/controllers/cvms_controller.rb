@@ -7,7 +7,7 @@ class CvmsController < ApplicationController
 
   def create
     @cvm=Cvm.new(cvm_params)
-    @cvm.educations.build
+    # byebug
     @cvm.user=current_user
     if @cvm.save
       flash[:success] = "Your CV has been successfully submitted!"
@@ -65,7 +65,7 @@ class CvmsController < ApplicationController
       params.require(:cvm).permit(:name, :address, :phone, :email, :website, :skill,
                                   :project, :interest, :fname, :mname, :lname, :street, :district,
                                   :land, :country, :mobile, educations_attributes: [:level, :institute,
-                                    :year, :percentage])
+                                    :year, :percentage], projects_attributes: [:pname,:description, :startdate, :enddate])
 
     end
 end

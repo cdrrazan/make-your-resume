@@ -92,5 +92,6 @@ gem 'paper_trail'
 gem 'cocoon'
 gem "nested_form"
 gem 'nested_form_fields'
-
-
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
+gem "font-awesome-rails"

@@ -1,0 +1,23 @@
+       <div class="nested-fields">
+            <div class="left-col3">
+                  <b>Name *</b>
+                  <%= f.input :pname, label:false, :input_html => {:style=> 'width: 320px'}, placeholder: "Project Name" %>
+                </div>
+
+                <div class="center-col3">
+                  <b>Description*</b>
+                  <%= f.input :description, label:false, :input_html => {:style=> 'width: 320px'},  placeholder: "Project Description " %>
+                </div>
+
+                <div class="center-col4">
+                  <b>Start Date</b>
+                  <%= f.input :startdate, label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "Start Date" %>
+                </div>
+
+                <div class="right-col3">
+                  <b>End Date </b>
+                  <%= f.input :enddate, label:false, :input_html => {:style=> 'width: 120px'},placeholder: "End Date" %>
+                </div>
+                <br><br><br><br>
+                <%= link_to_remove_association 'Remove', f, class: 'btn btn-danger btn-xs' %>
+        </div>
