@@ -14,13 +14,16 @@
 //= require jquery_ujs
 //= require jquery-ui/datepicker
 //= require turbolinks
+//= require jquery_nested_form
+//= require nested_form_fields
+//= require cocoon
 //= require_tree .
 
 
 function add_field(){
 	var div1=document.createElement('div');
 	div1.innerHTML=document.getElementsByClassName('education')[0].innerHTML ;
-	document.getElementById('newel').appendChild(div1);
+	document.getElementById('newrec').appendChild(div1);
 }
 
 function add_field1(){
