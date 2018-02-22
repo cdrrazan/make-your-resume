@@ -2,22 +2,22 @@
             <div class="nested-fields">
             <div class="left-col3">
                   <b>Project Title *</b>
-                  <%= f.input :pname, label:false, :input_html => {:style=> 'width: 320px'}, placeholder: "Project Title" %>
+                  <%= f.input :pname, label:false, :input_html => {:style=> 'width: 320px'}, placeholder: "CV Management" %>
                 </div>
 
                 <div class="center-col3">
                   <b>Description*</b>
-                  <%= f.input :description, label:false, :input_html => {:style=> 'width: 320px'},  placeholder: "Project Description " %>
+                  <%= f.input :description, label:false, :input_html => {:style=> 'width: 320px'},  placeholder: "A project on managing CV for users" %>
                 </div>
 
                 <div class="center-col4">
                   <b>Start Date</b>
-                  <%= f.input :startdate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "Start Date" %>
+                  <%= f.input :startdate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "01/01/2015" %>
                 </div>
 
                 <div class="right-col3">
                   <b>End Date </b>
-                  <%= f.input :enddate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'},placeholder: "End Date" %>
+                  <%= f.input :enddate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'},placeholder: "01/01/2016" %>
                 </div>
                 <br><br><br><br><br>
                 <%= link_to_remove_association 'Remove Project', f, class: 'btn btn-danger btn-xs' %><br><br>

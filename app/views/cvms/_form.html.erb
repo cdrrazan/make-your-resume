@@ -4,17 +4,17 @@
           <h3><b>Name:</b></h3>
             <div class="left-col">
               <b>First *</b>
-              <%= f.input :fname, label: false, :input_html => {:style=> 'width: 300px'}, placeholder: "First of your name" %>
+              <%= f.input :fname, label: false, :input_html => {:style=> 'width: 300px'}, placeholder: "Rajan" %>
             </div>
 
             <div class="center-col">
               <b>Middle </b>
-              <%= f.input :mname, label: false,:input_html => {:style=> 'width: 300px'}, placeholder: "Middle of your name" %>
+              <%= f.input :mname, label: false,:input_html => {:style=> 'width: 300px'}, placeholder: "Prasad" %>
             </div>
 
             <div class="right-col">
               <b>Last *</b>
-              <%= f.input :lname, label: false,:input_html => {:style=> 'width: 300px'}, placeholder: "Your Family Name"%>
+              <%= f.input :lname, label: false,:input_html => {:style=> 'width: 300px'}, placeholder: "Bhattarai"%>
             </div>
         </p>
         <br><br><br>
@@ -23,12 +23,12 @@
          <h3><b>Address: </b></h3>
             <div class="left-col">
               <b>Street *</b>
-              <%= f.input :street, label:false, :input_html => {:style=> 'width: 300px'},placeholder: "Street Name" %>
+              <%= f.input :street, label:false, :input_html => {:style=> 'width: 300px'},placeholder: "Patan Dhoka" %>
             </div>
 
             <div class="center-col">
               <b>District *</b>
-              <%= f.input :district, label:false, :input_html => {:style=> 'width: 300px'}, placeholder: "District" %>
+              <%= f.input :district, label:false, :input_html => {:style=> 'width: 300px'}, placeholder: "Lalitpur" %>
             </div>
 
             <div class="right-col">
@@ -41,23 +41,23 @@
           <h3><b>Phone: </b></h3>
             <div class="left-col1">
               <b>Landline *</b>
-              <%= f.input :land, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Landline Number "%>
+              <%= f.input :land, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "01-XXXXXXX"%>
             </div>
             <div class="right-col1">
               <b>Mobile *</b>
-            <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "Mobile Number " %>
+            <%= f.input :mobile,  label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "+97798 / 98XXXXXXXX" %>
             </div>
         </p>
         <br><br><br>
         <p>
             <div class="left-col1">
               <b>Email *</b>
-              <%= f.input :email, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "yourdummyemail@exampledomain.com" %>
+              <%= f.input :email, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "john@example.com" %>
             </div>
 
            <div class="right-col1">
              <b>Website   *</b>
-              <%= f.input :website, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "http://exampledomain.com" %>
+              <%= f.input :website, label:false, :input_html => {:style=> 'width: 465px'}, placeholder: "example.com" %>
             </div>
         </p>
         <br><br><br>
@@ -68,14 +68,14 @@
           <% end %>
              <div class='links'>
               <br>
-          <%= link_to_add_association 'Add Education Record', f, :educations, class: 'btn btn-primary'%>
+          <%= link_to_add_association 'Add Education', f, :educations, class: 'btn btn-primary'%>
           </div>
         </p>
         <p>
            <b>Skill *</b>
             <div id="newel1">
                 <div class="skill">
-                    <%= f.input :skill, label: false, input_html: { maxlength: 100 }, placeholder: "Skill!"%>
+                    <%= f.input :skill, label: false, input_html: { maxlength: 100 }, placeholder: "Web Developement/Operation Management/Web-Design etc.."%>
                 </div>
             </div>
         </p>
@@ -86,7 +86,7 @@
         <% end %>
            <div class='links'>
             <br>
-            <%= link_to_add_association 'Add Experience Record', f, :experiences, class: 'btn btn-primary'%>
+            <%= link_to_add_association 'Add Experience', f, :experiences, class: 'btn btn-primary'%>
         </div>
         </p>
 
@@ -94,7 +94,7 @@
            <b>Interest *</b>
             <div id="newel3">
               <div class="interest">
-              <%= f.input :interest, label: false, input_html: { maxlength: 100 }, placeholder: "Interest" %>
+              <%= f.input :interest, label: false, input_html: { maxlength: 100 }, placeholder: "Enter the area of interest. It may be things like technology or tools you are interested to work with." %>
               </div>
             </div>
         </p>

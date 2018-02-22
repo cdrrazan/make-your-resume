@@ -38,19 +38,40 @@
             <thead>
                 <tr>
                 <th>Name</th>
-                <th>Description</th>
+                <th>Position</th>
+                <th>Detail</th>
                 <th>Start Date</th>
                 <th>End Date</th>
                 </tr>
             </thead>
             <tbody>
-            <%@cvm.projects.each do |project| %>
+            <% @cvm.experiences.each do |exp| %>
                   <tr>
-                    <td><%= project.pname%></td>
-                    <td><%= project.description %></td>
-                    <td><%= project.startdate %></td>
-                    <td><%= project.enddate %></td>
+                    <td><%= exp.company%></td>
+                    <td><%= exp.position %></td>
+                    <td><%= exp.jobdetail %></td>
+                    <td><%= exp.startdate %></td>
+                    <td><%= exp.enddate %></td>
                   </tr>
+                  <br>
+                  </tbody>
+
+                  <thead>
+                <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                </tr>
+            </thead>
+                  <% exp.projects.each do |pro| %>
+                  <tr>
+                    <td><%= pro.pname %></td>
+                    <td><%= pro.description%></td>
+                    <td><%= pro.startdate%></td>
+                    <td><%= pro.enddate%></td>
+                    </tr>
+                    <%end %>
             <%end %>
             </tbody>
             </table>
