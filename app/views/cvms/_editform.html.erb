@@ -1,5 +1,5 @@
     <%= simple_form_for @cvm, method: :patch do |f| %>
-<p>
+        <p>
           <h3><b>Name:</b></h3>
             <div class="left-col">
               <b>First *</b>
@@ -72,7 +72,7 @@
          <div class='links'>
           <br>
       <%= link_to_add_association 'Add more', f, :educations, class: 'btn btn-primary', data: { association_insertion_node: '.edu', association_insertion_method: :append }%>
-    </div>
+      </div>
 
 
         </p>
@@ -88,7 +88,7 @@
          <div class='links'>
           <br>
       <%= link_to_add_association 'Add +1', f, :projects, class: 'btn btn-primary', data: { association_insertion_node: '.pro', association_insertion_method: :append }%>
-    </div>
+      </div>
 
 
         </p>

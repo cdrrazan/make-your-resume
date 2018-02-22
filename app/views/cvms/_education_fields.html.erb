@@ -10,14 +10,13 @@
                 </div>
 
                 <div class="center-col2">
-                  <b>Year *</b>
+                  <b>Completed Year *</b>
                   <%= f.input :year, :id => "datetimepicker", :as => :string, label:false, :input_html => {:style=> 'width: 270px'}, placeholder: " Passed Year in AD" %>
                 </div>
 
                 <div class="right-col2">
-                  <b>Percentage *</b>
+                  <b>Percentage/GPA *</b>
                   <%= f.input :percentage, label:false, :input_html => {:style=> 'width: 280px'},placeholder: "Percentage " %>
                 </div>
-            <%= link_to_remove_association 'Remove', f, class: 'btn btn-danger btn-xs' %>
+            <%= link_to_remove_association 'Remove Education Detail', f, class: 'btn btn-danger btn-xs' %>
         </div>
-

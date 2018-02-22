@@ -62,8 +62,8 @@ class CvmsController < ApplicationController
     def cvm_params
       params.require(:cvm).permit(:name, :address, :phone, :email, :website, :skill,
                                   :project, :interest, :fname, :mname, :lname, :street, :district,
-                                  :land, :country, :mobile, educations_attributes: [:level, :institute,
-                                    :year, :percentage], projects_attributes: [:pname,:description, :startdate, :enddate])
-
+                                  :land, :country, :mobile,
+                                  educations_attributes: [:level, :institute, :year, :percentage],
+                                  experiences_attributes: [:company, :position, :jobdetail, :startdate, :enddate])
     end
 end

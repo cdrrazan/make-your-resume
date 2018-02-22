@@ -95,8 +95,5 @@ gem 'nested_form_fields'
 gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
 gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 5.0.6'
 gem 'bootstrap-datepicker-rails'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-datetimepicker'
-end
