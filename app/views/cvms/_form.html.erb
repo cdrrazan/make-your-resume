@@ -63,39 +63,14 @@
         <br><br><br>
         <p>
           <h3><b>Education: </b></h3>
-
-          <div class="edu">
-
           <%= f.simple_fields_for :educations do |education| %>
              <%= render 'education_fields', :f=>education %>
-        <% end %>
-      </div>
-         <div class='links'>
-          <br>
-      <%= link_to_add_association 'Add more', f, :educations, class: 'btn btn-primary', data: { association_insertion_node: '.edu', association_insertion_method: :append }%>
-    </div>
-
-
+          <% end %>
+             <div class='links'>
+              <br>
+          <%= link_to_add_association 'Add Education Record', f, :educations, class: 'btn btn-primary'%>
+          </div>
         </p>
-
-        <p>
-          <h3><b>Experience: </b></h3>
-          <h4><i>Project</i></h4>
-          <div class="pro">
-          <%= f.simple_fields_for :projects do |project| %>
-             <%= render 'project_fields', :f=>project %>
-        <% end %>
-      </div>
-         <div class='links'>
-          <br>
-      <%= link_to_add_association 'Add +1', f, :projects, class: 'btn btn-primary', data: { association_insertion_node: '.pro', association_insertion_method: :append }%>
-    </div>
-
-
-        </p>
-
-
-        <br>
         <p>
            <b>Skill *</b>
             <div id="newel1">
@@ -104,10 +79,17 @@
                 </div>
             </div>
         </p>
-        <br>
+        <p>
+          <h3><b>Experience: </b></h3>
+          <%= f.simple_fields_for :experiences do |experience| %>
+             <%= render 'experience_fields', :f=>experience %>
+        <% end %>
+           <div class='links'>
+            <br>
+            <%= link_to_add_association 'Add Experience Record', f, :experiences, class: 'btn btn-primary'%>
+        </div>
+        </p>
 
-      <p>
-       </p>
         <p>
            <b>Interest *</b>
             <div id="newel3">

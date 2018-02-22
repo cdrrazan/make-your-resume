@@ -1,7 +1,8 @@
-       <div class="nested-fields">
+            <h4><b>Project</b></h4>
+            <div class="nested-fields">
             <div class="left-col3">
-                  <b>Name *</b>
-                  <%= f.input :pname, label:false, :input_html => {:style=> 'width: 320px'}, placeholder: "Project Name" %>
+                  <b>Project Title *</b>
+                  <%= f.input :pname, label:false, :input_html => {:style=> 'width: 320px'}, placeholder: "Project Title" %>
                 </div>
 
                 <div class="center-col3">
@@ -18,6 +19,7 @@
                   <b>End Date </b>
                   <%= f.input :enddate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'},placeholder: "End Date" %>
                 </div>
-                <br><br><br><br>
-                <%= link_to_remove_association 'Remove', f, class: 'btn btn-danger btn-xs' %>
-        </div>
+                <br><br><br><br><br>
+                <%= link_to_remove_association 'Remove Project', f, class: 'btn btn-danger btn-xs' %><br><br>
+            </div>
+
