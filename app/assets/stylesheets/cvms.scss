@@ -2,6 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$primary-font: 'Titillium Web', serif;
+$secondary-font: 'Nanum Myeongjo', sans-serif;
+$main-blue: #337ab7;
+
+.nav {
+  color: white;
+}
+.navbar-header .navbar-brand {
+  font-weight: 100;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: $main-blue;
+}
+
+.navbar-default  {
+  font-size: 18px;
+
+}
+
+
+html, body {
+  font-family: $primary-font;
+   height: 100%;
+   font-size: 18px
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  width: 70%;
+  position: relative;
+  /* Negative indent footer by its height */
+  margin: 0 auto;
+  /* Pad bottom by footer height */
+  padding: 0 0 30px;
+}
+
+.footer {
+  font-size: 24px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
 .left-col {
     float: left;
     width:33%;

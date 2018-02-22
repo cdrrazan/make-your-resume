@@ -12,14 +12,13 @@
 
                 <div class="center-col4">
                   <b>Start Date</b>
-                  <%= f.input :startdate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "01/01/2015" %>
+                  <%= f.input :startdate, label:false, :input_html => {:style=> 'width: 120px', 'data-provide': 'datepicker'}, placeholder: "01/01/2015" %>
                 </div>
 
                 <div class="right-col3">
                   <b>End Date </b>
-                  <%= f.input :enddate, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'},placeholder: "01/01/2016" %>
+                  <%= f.input :enddate, label:false, :input_html => {:style=> 'width: 120px', 'data-provide': 'datepicker'},placeholder: "01/01/2016" %>
                 </div>
                 <br><br><br><br><br>
                 <%= link_to_remove_association 'Remove Project', f, class: 'btn btn-danger btn-xs' %><br><br>
             </div>
-
