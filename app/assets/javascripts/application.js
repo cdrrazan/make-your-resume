@@ -12,6 +12,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery-ui
 //= require jquery-ui/datepicker
 //= require turbolinks
 //= require jquery_nested_form
@@ -19,5 +20,6 @@
 //= require cocoon
 //= require moment
 //= require bootstrap-datepicker
+//= require custom
 //= require_tree .
 

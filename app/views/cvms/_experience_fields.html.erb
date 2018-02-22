@@ -15,12 +15,12 @@
 
               <div class="center-col4">
                   <b>From</b>
-                  <%= f.input :startdate, as: :string, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'}, placeholder: "02/12/2015" %>
+                  <%= f.input :startdate, as: :string, label:false, :input_html => {:style=> 'width: 120px' , 'data-provide': 'datepicker'}, placeholder: "02/12/2015" %>
               </div>
 
               <div class="right-col3">
                   <b>To</b>
-                  <%= f.input :enddate, as: :string, :id => "datetimepicker1", label:false, :input_html => {:style=> 'width: 120px'},placeholder: "07/06/2017" %>
+                  <%= f.input :enddate, as: :string, label:false, :input_html => {:style=> 'width: 120px' , 'data-provide': 'datepicker'},placeholder: "07/06/2017" %>
               </div>
               <br><br><br><br>
                  <%= link_to_remove_association 'Remove Company', f, class: 'btn btn-danger btn-xs' %>
@@ -32,4 +32,9 @@
               <%= link_to_add_association 'Add Projects', f, :projects, class: 'btn btn-primary btn-xs'%>
               </div>
           </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>
 
