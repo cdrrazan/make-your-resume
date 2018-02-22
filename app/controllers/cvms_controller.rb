@@ -10,7 +10,7 @@ class CvmsController < ApplicationController
     @cvm.user=current_user
     if @cvm.save
       flash[:success] = "Your CV has been successfully submitted!"
-      redirect_to cvm_path(@cvm)
+      redirect_to root_path
     else
       flash[:alert] = "Woops! Looks like there has been an error!"
       redirect_to root_path
@@ -60,10 +60,9 @@ class CvmsController < ApplicationController
 
   private
     def cvm_params
-      params.require(:cvm).permit(:name, :address, :phone, :email, :website, :skill,
-                                  :project, :interest, :fname, :mname, :lname, :street, :district,
-                                  :land, :country, :mobile,
-                                  educations_attributes: [:level, :institute, :year, :percentage],
-                                  experiences_attributes: [:company, :position, :jobdetail, :startdate, :enddate])
+      params.require(:cvm).permit(:email, :website, :skill, :interest, :fname, :mname, :lname, :street,
+                                  :district, :land, :country, :mobile,
+                                  educations_attributes: [:id, :level, :institute, :year, :percentage, :_destroy],
+                                  experiences_attributes: [:id, :company, :position, :jobdetail, :startdate, :enddate, :_destroy ,projects_attributes: [:pname, :description, :startdate, :enddate, :_destroy] ])
     end
 end
