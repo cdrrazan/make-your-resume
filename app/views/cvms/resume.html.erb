@@ -1,6 +1,6 @@
             <center><h1>Resume </h1></center>
-            <h5><b>Name:</b> <%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h5>
-            <h5><b>Adress:</b> <%= "Street: #{@cvm.street} District: #{@cvm.district} Country: #{@cvm.country}" %></h5>
+          <h5><b>Name:</b> <%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h5>
+            <h5><b>Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %></h5>
             <h5><b>Phone:</b> <%= "Landline: #{@cvm.land} Mobile: #{@cvm.mobile}" %></h5>
             <h5><b>Email:</b> <%= @cvm.email %></h5>
             <h5><b>Website:</b> <%= "https://#{@cvm.website}" %></h5>
@@ -28,27 +28,50 @@
             </table>
             <br>
             </h5>
+
             <h5><b>Experience: </b>
-                <h5><i>Project</i></h5>
+
             <table class="table table-striped">
+             <% @cvm.experiences.each do |exp| %>
             <thead>
+
                 <tr>
-                <th>Name</th>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Detail</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td><%= exp.company%></td>
+                    <td><%= exp.position %></td>
+                    <td><%= exp.jobdetail %></td>
+                    <td><%= exp.startdate %></td>
+                    <td><%= exp.enddate %></td>
+                  </tr>
+                  </tbody>
+                  <% exp.projects.each do |pro| %>
+                 <thead>
+                <tr>
+                <th>Project Name</th>
                 <th>Description</th>
                 <th>Start Date</th>
                 <th>End Date</th>
                 </tr>
             </thead>
             <tbody>
-            <%@cvm.projects.each do |project| %>
-                  <tr>
-                    <td><%= project.pname%></td>
-                    <td><%= project.description %></td>
-                    <td><%= project.startdate %></td>
-                    <td><%= project.enddate %></td>
-                  </tr>
-            <%end %>
+                <tr>
+
+                    <td><%= pro.pname %></td>
+                    <td><%= pro.description%></td>
+                    <td><%= pro.startdate%></td>
+                    <td><%= pro.enddate%></td>
+                    </tr>
             </tbody>
+            <%end %>
+            <%end %>
             </table>
             </h5>
             <h5><b>Skill:</b> <%= @cvm.skill %></h5>
