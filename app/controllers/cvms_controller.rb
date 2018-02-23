@@ -10,7 +10,7 @@ class CvmsController < ApplicationController
     @cvm.user=current_user
     if @cvm.save
       flash[:success] = "Your CV has been successfully submitted!"
-      redirect_to root_path
+      redirect_to cvm_path(@cvm)
     else
       flash[:alert] = "Woops! Looks like there has been an error!"
       redirect_to root_path

@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     resources :cvms
     resources :users, only: [:show]
   get 'about' => 'static_pages#about'
-  get 'user' => 'cvms#show'
+  get 'cv' => 'cvms#show'
   get 'contact' => 'static_pages#contact'
 end
