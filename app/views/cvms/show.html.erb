@@ -1,5 +1,5 @@
 <center>
-    <h1>CV Details!</h1>
+<h1>CV Details!</h1>
 </center>
 <div class="panel panel-default">
     <div class="panel-body">
@@ -10,88 +10,79 @@
             <h3><b>Email:</b> <%= @cvm.email %></h3>
             <h3><b>Website:</b> <%= "https://#{@cvm.website}" %></h3>
             <h3><b>Education:</b><br>
-
             <table class="table table-striped">
                 <thead>
                     <tr>
-                    <th>Level</th>
-                    <th>Institute</th>
-                    <th>Year</th>
-                    <th>Percentage</th>
+                        <th>Level</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
                     </tr>
                 </thead>
-            <tbody>
-            <%@cvm.educations.each do |education| %>
+                <tbody>
+                    <%@cvm.educations.each do |education| %>
                     <tr>
-                    <td><%= education.level%></td>
-                    <td><%= education.institute %></td>
-                    <td><%= education.year %></td>
-                    <td><%= education.percentage %></td>
+                        <td><%= education.level%></td>
+                        <td><%= education.institute %></td>
+                        <td><%= education.year %></td>
+                        <td><%= education.percentage %></td>
                     </tr>
-            <%end %>
-            </tbody>
+                    <%end %>
+                </tbody>
             </table>
             <br>
             </h3>
-
             <h3><b>Experience: </b>
-
             <table class="table table-striped">
-             <% @cvm.experiences.each do |exp| %>
-            <thead>
-
-                <tr>
-                <th>Company</th>
-                <th>Position</th>
-                <th>Detail</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td><%= exp.company%></td>
-                    <td><%= exp.position %></td>
-                    <td><%= exp.jobdetail %></td>
-                    <td><%= exp.startdate %></td>
-                    <td><%= exp.enddate %></td>
-                  </tr>
-                  </tbody>
-                  <% exp.projects.each do |pro| %>
-                 <thead>
-                <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                    <td><%= pro.pname %></td>
-                    <td><%= pro.description%></td>
-                    <td><%= pro.startdate%></td>
-                    <td><%= pro.enddate%></td>
+                <% @cvm.experiences.each do |exp| %>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Detail</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
                     </tr>
-
-
-
-            </tbody>
-            <%end %>
-            <%end %>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= exp.company%></td>
+                        <td><%= exp.position %></td>
+                        <td><%= exp.jobdetail %></td>
+                        <td><%= exp.startdate %></td>
+                        <td><%= exp.enddate %></td>
+                    </tr>
+                </tbody>
+                <% exp.projects.each do |pro| %>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= pro.pname %></td>
+                        <td><%= pro.description%></td>
+                        <td><%= pro.startdate%></td>
+                        <td><%= pro.enddate%></td>
+                    </tr>
+                </tbody>
+                <%end %>
+                <%end %>
             </table>
             </h3>
             <h3><b>Skill:</b> <%= @cvm.skill %></h3>
             <h3><b>Interest:</b> <%= @cvm.interest %></h3>
         </blockquote>
-            <br>
-            </div>
+        <br>
+    </div>
 </div>
-    <center>
-                <%= link_to "Download CV in PDF format", cvm_path(@cvm, format: "pdf"), class: 'btn btn-primary'%>
-            </center>
-
+<center>
+<%= link_to "Download CV in PDF format", cvm_path(@cvm, format: "pdf"), class: 'btn btn-primary'%>
+</center>
 <br>
 <br>
 <br>
