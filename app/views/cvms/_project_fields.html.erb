@@ -1,5 +1,5 @@
-            <h4><b>Project</b></h4>
-            <div class="nested-fields">
+           <div class="nested-fields">
+               <h4><b>Project</b></h4>
             <div class="left-col3">
                   <b>Project Title *</b>
                   <%= f.input :pname, label:false, :input_html => {:style=> 'width: 320px'}, placeholder: "CV Management" %>
@@ -14,28 +14,24 @@
                   <b>Start Date</b>
                   <%= f.input :startdate, label:false, :input_html => {:style=> 'width: 120px', 'data-provide': 'datepicker'}, placeholder: "01/01/2015" %>
                 </div>
-                  <div id="autoUpdate" class="autoUpdate">
+                  <div id="update1" class="update1">
                   <div class="right-col3">
                     <b>End Date </b>
                     <%= f.input :enddate, label:false, :input_html => {:style=> 'width: 120px', 'data-provide': 'datepicker'},placeholder: "01/01/2016" %>
                     </div>
-                </div>
-                <br><br><br><br>
-                <input type="checkbox" id="checkbox1" unchecked="unchk" />I currently work here
+                  </div>
+
+                <br><br><br><br><br>
+                <input type="checkbox" id="checkbox1"/> This is ongoing project.
                 <br><br>
                 <%= link_to_remove_association 'Remove Project', f, class: 'btn btn-danger btn-xs' %><br><br>
-            </div>
-            <script>
-            $('#checkbox1').change(function(){
-            if (this.checked) {
-              $('#autoUpdate').fadeOut('slow');
-
-            } else {
-                $('#autoUpdate').fadeIn('slow');
-
-              }
-          });
-        </script>
-
-
-
+                  <script>
+                  $('#checkbox1').change(function(){
+                  if (this.checked) {
+                      $('#update1').fadeOut('slow');
+                  } else {
+                    $('#update1').fadeIn('slow');
+                    }
+                });
+                </script>
+              </div>
