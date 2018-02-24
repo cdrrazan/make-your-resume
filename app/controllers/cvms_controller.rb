@@ -22,7 +22,7 @@ class CvmsController < ApplicationController
   end
 
   def show
-    @cvm=Cvm.find(params[:id])
+    @cvm=current_user.cvm
     respond_to do |format|
       format.html
       format.json
