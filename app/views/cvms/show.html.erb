@@ -9,7 +9,8 @@
             <h3><b>Phone:</b> <%= "Landline: #{@cvm.land} Mobile: #{@cvm.mobile}" %></h3>
             <h3><b>Email:</b> <%= @cvm.email %></h3>
             <h3><b>Website:</b> <%= "https://#{@cvm.website}" %></h3>
-            <h3><b>Education:</b><br>
+            <h3><b>Education:</b><br></h3>
+            <h4>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -31,8 +32,9 @@
                 </tbody>
             </table>
             <br>
-            </h3>
-            <h3><b>Experience: </b>
+            </h4>
+            <h3><b>Experience: </b></h3>
+            <h4>
             <table class="table table-striped">
                 <% @cvm.experiences.each do |exp| %>
                 <thead>
@@ -70,17 +72,16 @@
                         <td><%= pro.enddate%></td>
                     </tr>
                 </tbody>
-                <%end %>
-                <%end %>
+                <% end %>
+                <% end %>
             </table>
-            </h3>
+            </h4>
             <h3><b>Skill:</b> <%= @cvm.skill %></h3>
             <h3><b>Interest:</b> <%= @cvm.interest %></h3>
         </blockquote>
         <br>
-         <%= link_to "Edit Details", edit_cvm_path(@cvm), class: 'btn btn-primary'%>
-          <%= link_to "Delete this record", cvm_path(@cvm), method: :delete, class: 'btn btn-danger'%>
-
+        <%= link_to "Edit Details", edit_cvm_path(@cvm), class: 'btn btn-primary'%>
+        <%= link_to "Delete this record", cvm_path(@cvm), method: :delete, class: 'btn btn-danger'%>
     </div>
 </div>
 <center>
