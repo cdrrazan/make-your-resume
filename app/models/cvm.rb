@@ -9,7 +9,7 @@ class Cvm < ApplicationRecord
   accepts_nested_attributes_for :educations, :experiences, :allow_destroy => true, :reject_if => :all_blank
 
   validates     :fname, :lname, :street, :district,:country, :land,
-                 :mobile, :email, :website,:skill, :interest,
+                 :mobile, :email, :website, :skill, :interest,
                  presence: true
 
 end
