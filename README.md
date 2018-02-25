@@ -1,4 +1,5 @@
-# Welcome to make-your-CV app!
+# Welcome to make-your-CV app! [![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master
+)](https://travis-ci.org/cdrrazan/make-your-cv)
 
 **make-your-cv :** Get info from user and store/generate PDF!
 
