@@ -1,4 +1,4 @@
-# Welcome to make-your-CV app! [![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.org/cdrrazan/make-your-cv)
+# Welcome to make-your-CV app! [![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.org/cdrrazan/make-your-cv)[![Maintainability](https://api.codeclimate.com/v1/badges/6bc7021d601e1d5f0f73/maintainability)](https://codeclimate.com/github/cdrrazan/make-your-cv/maintainability)
 
 **make-your-cv :** Get info from user and store/generate PDF!
 
@@ -37,8 +37,9 @@ Don't forget to check Dockerfile and docker-compose.yml as well.
 > Simple PDF layout. Will have extensive template for generating the PDF formats with user images as well.
 
 ## Future Work
+:heavy_check_mark: ~~Dockerfile and Docker-compose Init~~ 
+:heavy_check_mark: ~~Scripting and Travis Build Pass.~~
 
-``Dockerfile and Docker-compose Init`` <br>
-``Scripting and Travis Build Pass.``
+``` Send automatic mail to the user using Sidekiq and Actionmailer```
 
 # Thank you!
