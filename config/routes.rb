@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/rails-adminx-conf', as: 'rails_admin'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   root 'cvms#index'
+   root 'cvms#show'
     resources :cvms
     resources :users, only: [:show]
   get 'about' => 'static_pages#about'

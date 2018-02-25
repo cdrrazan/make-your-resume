@@ -11,7 +11,7 @@ class CvmsController < ApplicationController
     @cvm.user=current_user
     if @cvm.save
       flash[:success] = "Your CV has been successfully submitted!"
-      redirect_to my_cv_path
+      redirect_to cvm_path(@cvm)
     else
       flash[:alert] = "Woops! Looks like there has been an error!"
       redirect_to root_path
@@ -23,7 +23,10 @@ class CvmsController < ApplicationController
   end
 
   def show
-    @cvm=current_user.cvm
+    if current_user.cvm.nil?
+      redirect_to cvms_path
+    else
+      @cvm=current_user.cvm
     respond_to do |format|
       format.html
       format.json
@@ -33,6 +36,8 @@ class CvmsController < ApplicationController
             template: "cvms/resume.html.erb",
             disposition: "inline",
             layout: "pdf.html"
+
+          end
        end
     end
   end
@@ -41,11 +46,13 @@ class CvmsController < ApplicationController
     @cvm=Cvm.find(params[:id])
   end
 
+
+
   def update
     @cvm=Cvm.find(params[:id])
       if @cvm.update(cvm_params)
         flash[:success] = "CV has been updated!"
-        redirect_to my_cv_path
+        redirect_to cvm_path(@cvm)
       else
         redirect_to edit_cvm_path
       end
