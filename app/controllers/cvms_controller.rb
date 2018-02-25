@@ -10,7 +10,7 @@ class CvmsController < ApplicationController
     @cvm.user=current_user
     if @cvm.save
       flash[:success] = "Your CV has been successfully submitted!"
-      redirect_to cvm_path(@cvm)
+      redirect_to my_cv_path
     else
       flash[:alert] = "Woops! Looks like there has been an error!"
       redirect_to root_path
@@ -44,9 +44,9 @@ class CvmsController < ApplicationController
     @cvm=Cvm.find(params[:id])
       if @cvm.update(cvm_params)
         flash[:success] = "CV has been updated!"
-        redirect_to cvm_path(@cvm)
+        redirect_to my_cv_path
       else
-        redirect_to edit_cvm_path(cvm)
+        redirect_to edit_cvm_path
       end
   end
 
