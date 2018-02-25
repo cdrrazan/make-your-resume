@@ -1,66 +1,72 @@
 // Place all the styles related to the cvms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-$primary-font: 'Open Sans', serif;
-$secondary-font: 'Montserrat', sans-serif;
+$primary-font: 'Open Sans',
+serif;
+$secondary-font: 'Montserrat',
+sans-serif;
 $main-blue: #337ab7;
-
 .nav {
-  color: white;
+    color: white;
 }
+
 .navbar-header .navbar-brand {
-  font-weight: 100;
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: $main-blue;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: $main-blue;
 }
 
-.navbar-default  {
-  font-size: 18px;
-
+.navbar-default {
+    font-size: 18px;
 }
 
-
-html, body {
-  font-family: $primary-font;
-   height: 100%;
-   font-size: 18px
+html,
+body {
+    font-family: $primary-font;
+    height: 100%;
+    font-size: 18px
 }
 
 .wrap {
-  min-height: 100%;
-  height: auto;
-  width: 70%;
-  position: relative;
-  /* Negative indent footer by its height */
-  margin: 0 auto;
-  /* Pad bottom by footer height */
-  padding: 0 0 30px;
+    min-height: 100%;
+    height: auto;
+    width: 70%;
+    position: relative;
+    /* Negative indent footer by its height */
+    margin: 0 auto;
+    /* Pad bottom by footer height */
+    padding: 0 0 30px;
 }
 
 .footer {
-  font-size: 24px;
+    font-size: 24px;
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid black;
 }
 
 .left-col {
     float: left;
-    width:33%;
+    width: 33%;
 }
+
 .center-col {
     float: left;
     width: 33%;
 }
+
 .right-col {
     float: left;
     width: 33%;
 }
+
 .left-col1 {
     float: left;
-    width:50%;
+    width: 50%;
 }
 
 .right-col1 {
@@ -72,14 +78,17 @@ table, th, td {
     float: left;
     width: 10%;
 }
+
 .center-col1 {
     float: left;
     width: 30%;
 }
+
 .center-col2 {
     float: left;
     width: 30%;
 }
+
 .right-col2 {
     float: left;
     width: 30%;
@@ -89,19 +98,61 @@ table, th, td {
     float: left;
     width: 35%;
 }
+
 .center-col3 {
     float: left;
     width: 35%;
 }
+
 .center-col4 {
     float: left;
     width: 15%;
 }
+
 .right-col3 {
     float: left;
     width: 15%;
 }
-.right-col4{
+
+.right-col4 {
     float: left;
     width: 25%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#page-wrap {
+    width: 800px;
+    margin: 40px auto 60px;
+}
+
+
+dt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    padding: 0 26px 0 0;
+    width: 150px;
+    float: left;
+    height: 100px;
+    border-right: 1px solid #999;
+}
+
+dd {
+    width: 600px;
+    float: right;
+}
+
+dd.clear {
+    float: none;
+    margin: 0;
+    height: 15px;
 }

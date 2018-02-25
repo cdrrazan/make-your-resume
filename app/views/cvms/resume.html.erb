@@ -1,76 +1,60 @@
-<center><h1>Resume </h1></center>
-<h5><b>Name:</b> <%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h5>
-<h5><b>Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %></h5>
-<h5><b>Phone:</b> <%= "Landline: #{@cvm.land} Mobile: #{@cvm.mobile}" %></h5>
-<h5><b>Email:</b> <%= @cvm.email %></h5>
-<h5><b>Website:</b> <%= "https://#{@cvm.website}" %></h5>
-<h5><b>Education:</b><br>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Level</th>
-            <th>Institute</th>
-            <th>Year</th>
-            <th>Percentage</th>
-        </tr>
-    </thead>
-    <tbody>
+  <blockquote>
+<div id="page-wrap">
+    <div id="contact-info" class="vcard">
+        <h2 style="font-size: 48px"><%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h2>
+        <hr>
+        <p>
+            Cell: <span class="tel"></span><%= "#{@cvm.mobile}" %><br />
+            Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %>
+        </p>
+        Email: <a class="email" href="<%= "mailto://#{@cvm.email}" %>"><%= "#{@cvm.email}" %></a>
+        <br>
+        Website: <a class="email" href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
+        <hr>
+        <div class="clear"></div>
+        <dd class="clear"></dd>
+        <dt>Education</dt>
+        <dd>
         <%@cvm.educations.each do |education| %>
-        <tr>
-            <td><%= education.level%></td>
-            <td><%= education.institute %></td>
-            <td><%= education.year %></td>
-            <td><%= education.percentage %></td>
-        </tr>
-        <%end %>
-    </tbody>
-</table>
-<br>
-</h5>
-<h5><b>Experience: </b>
-<table class="table table-striped">
-    <% @cvm.experiences.each do |exp| %>
-    <thead>
-        <tr>
-            <th>Company</th>
-            <th>Position</th>
-            <th>Detail</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><%= exp.company%></td>
-            <td><%= exp.position %></td>
-            <td><%= exp.jobdetail %></td>
-            <td><%= exp.startdate %></td>
-            <td><%= exp.enddate %></td>
-        </tr>
-    </tbody>
-    <% exp.projects.each do |pro| %>
-    <thead>
-        <tr>
-            <th>Project Name</th>
-            <th>Description</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><%= pro.pname %></td>
-            <td><%= pro.description%></td>
-            <td><%= pro.startdate%></td>
-            <td><%= pro.enddate%></td>
-        </tr>
-    </tbody>
-    <%end %>
-    <%end %>
-</table>
-</h5>
-<h5><b>Skill:</b> <%= @cvm.skill %></h5>
-<h5><b>Interest:</b> <%= @cvm.interest %></h5>
+        <h2><%= education.level%> </h2>
+        <p><%= education.institute %>, <%= education.year %>, <%= education.percentage %>%</p>
+        <% end %>
+        </dd>
+        <dl>
+             <dd class="clear"></dd>
+            <dt>Skill</dt>
+            <dd>
+            <p><%= @cvm.skill %></p>
+            </dd>
+            <dd class="clear"></dd>
+            <dt>Experience</dt>
+            <dd>
+            <% @cvm.experiences.each do |exp| %>
+            <h2><%= exp.position %> at <%= exp.company%></h2>
+            <p>
+                <%= exp.jobdetail %>
+            </p>
+            <p>
+                <%= exp.startdate %>-
+                <%= exp.enddate %>
+            </p>
+            <h2>Project</h2>
+            <hr>
+            <% exp.projects.each do |pro| %>
+            <h4><%= pro.pname %></h4>
+            <p><%= pro.description%></p>
+            <p><%= pro.startdate%>-<%= pro.enddate%></p>
+            <% end %>
+            <br><br>
+            <% end %>
+            </dd>
+            <dd class="clear"></dd>
+            <dt>Interest</dt>
+            <dd><%= @cvm.interest %></dd>
+        </dl>
+    </div>
+</div>
+</blockquote>
 <br><br><br>
 <p>
     <center>cdrrazan <%= Date.today.year %>. PDF generated via WickedPDF!</center>
