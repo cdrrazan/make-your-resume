@@ -58,6 +58,7 @@
 <p>
   <h3><b>Education: </b></h3>
   <center><h4><b>Click on Add Education button to add your education details.</b></h4></center>
+  <h5><b>At least one record is required!</b></h5>
   <hr>
   <%= f.simple_fields_for :educations do |education| %>
   <%= render 'education_fields', :f=>education %>
@@ -80,6 +81,7 @@
 <p>
   <h3><b>Experience: </b></h3>
   <center><h4><b>Click on Add Experience button to add your experience details.</b></h4></center>
+  <h5><b>At least one company info is required!</b></h5>
   <hr>
   <%= f.simple_fields_for :experiences do |experience| %>
   <%= render 'experience_fields', :f=>experience %>
