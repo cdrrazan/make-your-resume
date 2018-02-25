@@ -5,6 +5,7 @@ class CvmsController < ApplicationController
     @cvm=Cvm.new
   end
 
+
   def create
     @cvm=Cvm.new(cvm_params)
     @cvm.user=current_user
