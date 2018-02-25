@@ -1,7 +1,5 @@
 {
   "name": "cvenliv",
   "private": true,
-  "dependencies": {
-    "flatpickr": "^4.3.2"
-  }
+  "dependencies": {}
 }
