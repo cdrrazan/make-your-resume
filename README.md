@@ -3,7 +3,8 @@
 **make-your-cv :** Get info from user and store/generate PDF!
 
 ## Setup
-I already wrote a script file to automate the setup process.
+I already wrote a script file to automate the setup process. 
+(_This project uses postgresql, so author assumes postgresql is already configured in your system._)
 
 1. Give permission to the file:
   **``$ chmod +x make-your-cv.sh`` or ``$ chmod 755 make-your-cv.sh``**
@@ -13,7 +14,7 @@ I already wrote a script file to automate the setup process.
 
 This will check and create db and automatically start the server for you!
 
-Don't forget to check Dockerfile and docker-compose.yml as well.
+Don't forget to check ```Dockerfile``` and ```docker-compose.yml``` as well.
 <br>
 
 ## Features and Workflow
