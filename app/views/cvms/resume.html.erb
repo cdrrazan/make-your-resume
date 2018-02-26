@@ -1,59 +1,59 @@
-  <blockquote>
-<div id="page-wrap">
-    <div id="contact-info" class="vcard">
-        <h2 style="font-size: 48px"><%= "#{@cvm.fname.capitalize} #{@cvm.mname.capitalize} #{@cvm.lname.capitalize}" %></h2>
-        <hr>
-        <p>
-            Cell: <span class="tel"></span><%= "#{@cvm.mobile}" %><br />
-            Adress:</b> <%= "#{@cvm.street.capitalize}, #{@cvm.district.capitalize}, #{@cvm.country.capitalize}" %>
-        </p>
-        Email: <a class="email" href="<%= "mailto://#{@cvm.email}" %>"><%= "#{@cvm.email}" %></a>
-        <br>
-        Website: <a href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
-        <hr>
-        <div class="clear"></div>
-        <dd class="clear"></dd>
-        <dt>Education</dt>
-        <dd>
-        <%@cvm.educations.each do |education| %>
-        <h2><%= education.level.upcase%> </h2>
-        <p><%= education.institute %>, <%= education.year %>, <%= education.percentage %>%</p>
-        <% end %>
-        </dd>
-        <dl>
-             <dd class="clear"></dd>
-            <dt>Skill</dt>
-            <dd>
-            <p><%= @cvm.skill %></p>
-            </dd>
-            <dd class="clear"></dd>
-            <dt>Experience</dt>
-            <dd>
-            <% @cvm.experiences.each do |exp| %>
-            <h2><%= exp.position.capitalize %> at <%= exp.company%></h2>
-            <p>
-                <%= exp.jobdetail %>
-            </p>
-            <p>
-                <%= exp.startdate %>-
-                <%= exp.enddate %>
-            </p>
-            <h2>Project</h2>
+<blockquote>
+    <div id="page-wrap">
+        <div id="contact-info" class="vcard">
+            <h2 style="font-size: 48px"><%= "#{@cvm.fname.capitalize} #{@cvm.mname.capitalize} #{@cvm.lname.capitalize}" %></h2>
             <hr>
-            <% exp.projects.each do |pro| %>
-            <h4><%= pro.pname %></h4>
-            <p><%= pro.description%></p>
-            <p><%= pro.startdate%>-<%= pro.enddate%></p>
-            <% end %>
-            <br><br>
+            <p>
+                Cell: <span class="tel"></span><%= "#{@cvm.mobile}" %><br />
+                Adress:</b> <%= "#{@cvm.street.capitalize}, #{@cvm.district.capitalize}, #{@cvm.country.capitalize}" %>
+            </p>
+            Email: <a class="email" href="<%= "mailto://#{@cvm.email}" %>"><%= "#{@cvm.email}" %></a>
+            <br>
+            Website: <a href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
+            <hr>
+            <div class="clear"></div>
+            <dd class="clear"></dd>
+            <dt>Education</dt>
+            <dd>
+            <%@cvm.educations.each do |education| %>
+            <h2><%= education.level.upcase%> </h2>
+            <p><%= education.institute %>, <%= education.year %>, <%= education.percentage %>%</p>
             <% end %>
             </dd>
-            <dd class="clear"></dd>
-            <dt>Interest</dt>
-            <dd><%= @cvm.interest%></dd>
-        </dl>
+            <dl>
+                <dd class="clear"></dd>
+                <dt>Skill</dt>
+                <dd>
+                <p><%= @cvm.skill %></p>
+                </dd>
+                <dd class="clear"></dd>
+                <dt>Experience</dt>
+                <dd>
+                <% @cvm.experiences.each do |exp| %>
+                <h2><%= exp.position.capitalize %> at <%= exp.company%></h2>
+                <p>
+                    <%= exp.jobdetail %>
+                </p>
+                <p>
+                    <%= exp.startdate %>-
+                    <%= exp.enddate %>
+                </p>
+                <h2>Project</h2>
+                <hr>
+                <% exp.projects.each do |pro| %>
+                <h4><%= pro.pname %></h4>
+                <p><%= pro.description%></p>
+                <p><%= pro.startdate%>-<%= pro.enddate%></p>
+                <% end %>
+                <br><br>
+                <% end %>
+                </dd>
+                <dd class="clear"></dd>
+                <dt>Interest</dt>
+                <dd><%= @cvm.interest%></dd>
+            </dl>
+        </div>
     </div>
-</div>
 </blockquote>
 <br><br><br>
 <p>

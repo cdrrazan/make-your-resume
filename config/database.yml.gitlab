@@ -1,0 +1,10 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: postgres
+  username: gitci
+  password: ""
+  database: test_db
+
