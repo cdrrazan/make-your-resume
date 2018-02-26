@@ -22,14 +22,14 @@
   <input type="checkbox" class="project-checkbox"/> This is ongoing project.
   <br><br>
   <%= link_to_remove_association 'Remove Project', f, class: 'btn btn-danger btn-xs' %><br><br>
- <script>
+  <script>
   $('.project-checkbox').change(function(){
-    var projectEndDateDiv = $(this).parent().find('.project-end-date');
-    if (this.checked) {
-      projectEndDateDiv.fadeOut('slow');
-    } else {
-      projectEndDateDiv.fadeIn('slow');
-    }
+  var projectEndDateDiv = $(this).parent().find('.project-end-date');
+  if (this.checked) {
+  projectEndDateDiv.fadeOut('slow');
+  } else {
+  projectEndDateDiv.fadeIn('slow');
+  }
   });
   </script>
 </div>
