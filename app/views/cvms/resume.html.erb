@@ -1,22 +1,22 @@
   <blockquote>
 <div id="page-wrap">
     <div id="contact-info" class="vcard">
-        <h2 style="font-size: 48px"><%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h2>
+        <h2 style="font-size: 48px"><%= "#{@cvm.fname.capitalize} #{@cvm.mname.capitalize} #{@cvm.lname.capitalize}" %></h2>
         <hr>
         <p>
             Cell: <span class="tel"></span><%= "#{@cvm.mobile}" %><br />
-            Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %>
+            Adress:</b> <%= "#{@cvm.street.capitalize}, #{@cvm.district.capitalize}, #{@cvm.country.capitalize}" %>
         </p>
         Email: <a class="email" href="<%= "mailto://#{@cvm.email}" %>"><%= "#{@cvm.email}" %></a>
         <br>
-        Website: <a class="email" href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
+        Website: <a href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
         <hr>
         <div class="clear"></div>
         <dd class="clear"></dd>
         <dt>Education</dt>
         <dd>
         <%@cvm.educations.each do |education| %>
-        <h2><%= education.level%> </h2>
+        <h2><%= education.level.upcase%> </h2>
         <p><%= education.institute %>, <%= education.year %>, <%= education.percentage %>%</p>
         <% end %>
         </dd>
@@ -30,7 +30,7 @@
             <dt>Experience</dt>
             <dd>
             <% @cvm.experiences.each do |exp| %>
-            <h2><%= exp.position %> at <%= exp.company%></h2>
+            <h2><%= exp.position.capitalize %> at <%= exp.company%></h2>
             <p>
                 <%= exp.jobdetail %>
             </p>
@@ -50,7 +50,7 @@
             </dd>
             <dd class="clear"></dd>
             <dt>Interest</dt>
-            <dd><%= @cvm.interest %></dd>
+            <dd><%= @cvm.interest%></dd>
         </dl>
     </div>
 </div>
