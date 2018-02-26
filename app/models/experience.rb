@@ -2,9 +2,11 @@ class Experience < ApplicationRecord
 
   belongs_to :cvm
 
+  validates :company, :position, :jobdetail, :startdate, presence: true
+
   has_many  :projects, dependent: :destroy
 
-  accepts_nested_attributes_for :projects, :allow_destroy => true, :reject_if => :all_blank
+  accepts_nested_attributes_for :projects
 
-  validates :company, :position, :jobdetail, :startdate, presence: true
+
 end
