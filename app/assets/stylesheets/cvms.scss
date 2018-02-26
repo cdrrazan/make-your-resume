@@ -23,7 +23,7 @@ html,
 body {
     font-family: $primary-font;
     height: 100%;
-    font-size: 18px
+    font-size: 14px
 }
 
 .wrap {
@@ -126,11 +126,6 @@ td {
     clear: both;
 }
 
-#page-wrap {
-    width: 800px;
-    margin: 40px auto 60px;
-}
-
 
 dt {
     font-style: italic;
@@ -147,10 +142,4 @@ dt {
 dd {
     width: 600px;
     float: right;
-}
-
-dd.clear {
-    float: none;
-    margin: 0;
-    height: 15px;
 }
