@@ -1,6 +1,6 @@
 # Welcome to make-your-CV app!
 
-[![pipeline status](https://gitlab.com/cdrrazan/make-your-cv/badges/master/pipeline.svg)](https://gitlab.com/cdrrazan/make-your-cv/commits/master) [![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.org/cdrrazan/make-your-cv) [![Maintainability](https://api.codeclimate.com/v1/badges/6bc7021d601e1d5f0f73/maintainability)](https://codeclimate.com/github/cdrrazan/make-your-cv/maintainability) [![Open Source Helpers](https://www.codetriage.com/cdrrazan/make-your-cv/badges/users.svg)](https://www.codetriage.com/cdrrazan/make-your-cv)
+[![pipeline status](http://gitlab.com/cdrrazan/make-your-cv/badges/master/pipeline.svg)](https://gitlab.com/cdrrazan/make-your-cv/commits/master) [![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.org/cdrrazan/make-your-cv) [![Maintainability](https://api.codeclimate.com/v1/badges/6bc7021d601e1d5f0f73/maintainability)](https://codeclimate.com/github/cdrrazan/make-your-cv/maintainability) [![Open Source Helpers](https://www.codetriage.com/cdrrazan/make-your-cv/badges/users.svg)](https://www.codetriage.com/cdrrazan/make-your-cv)
 
 ### make-your-cv : Get info from user and store/generate PDF!
 
