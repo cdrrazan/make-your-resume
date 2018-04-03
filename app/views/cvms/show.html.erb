@@ -1,89 +1,75 @@
 <center>
-<h1>CV Details!</h1>
+<h1>My CV!</h1>
 </center>
 <div class="panel panel-default">
     <div class="panel-body">
         <blockquote>
-            <h3><b>Name:</b> <%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h3>
-            <h3><b>Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %></h3>
-            <h3><b>Phone:</b> <%= "Landline: #{@cvm.land}, Mobile: #{@cvm.mobile}" %></h3>
-            <h3><b>Email:</b> <%= @cvm.email %></h3>
-            <h3><b>Website:</b> <%= "https://#{@cvm.website}" %></h3>
-            <h3><b>Education:</b><br></h3>
-            <h4>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Level</th>
-                        <th>Institute</th>
-                        <th>Year</th>
-                        <th>Percentage</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div id="page-wrap">
+                <div id="contact-info" class="vcard">
+                    <h2 style="font-size: 48px"><%= "#{@cvm.fname.capitalize} #{@cvm.mname.capitalize} #{@cvm.lname.capitalize}" %></h2>
+                    <hr>
+                    <p>
+                        Cell: <span class="tel"></span><%= "#{@cvm.mobile}" %><br />
+                        Adress:</b> <%= "#{@cvm.street.capitalize}, #{@cvm.district.capitalize}, #{@cvm.country.capitalize}" %>
+                    </p>
+                    Email: <a class="email" href="<%= "mailto://#{@cvm.email}" %>"><%= "#{@cvm.email}" %></a>
+                    <br>
+                    Website: <a href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
+                    <hr>
+                    <div class="clear"></div>
+                    <dd class="clear"></dd>
+                    <dt>Education</dt>
+                    <dd>
                     <%@cvm.educations.each do |education| %>
-                    <tr>
-                        <td><%= education.level%></td>
-                        <td><%= education.institute %></td>
-                        <td><%= education.year %></td>
-                        <td><%= education.percentage %></td>
-                    </tr>
-                    <%end %>
-                </tbody>
-            </table>
-            <br>
-            </h4>
-            <h3><b>Experience: </b></h3>
-            <h4>
-            <table class="table table-striped">
-                <% @cvm.experiences.each do |exp| %>
-                <thead>
-                    <tr>
-                        <th>Company</th>
-                        <th>Position</th>
-                        <th>Detail</th>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><%= exp.company%></td>
-                        <td><%= exp.position %></td>
-                        <td><%= exp.jobdetail %></td>
-                        <td><%= exp.startdate %></td>
-                        <td><%= exp.enddate %></td>
-                    </tr>
-                </tbody>
-                <% exp.projects.each do |pro| %>
-                <thead>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><%= pro.pname %></td>
-                        <td><%= pro.description%></td>
-                        <td><%= pro.startdate%></td>
-                        <td><%= pro.enddate%></td>
-                    </tr>
-                </tbody>
-                <% end %>
-                <% end %>
-            </table>
-            </h4>
-            <h3><b>Skill:</b> <%= @cvm.skill %></h3>
-            <h3><b>Interest:</b> <%= @cvm.interest %></h3>
+                    <h2><%= education.level.upcase%> </h2>
+                    <p><%= education.institute %>, <%= education.year %>, <%= education.percentage %>%</p>
+                    <% end %>
+                    </dd>
+                    <dl>
+                        <dd class="clear"></dd>
+                        <dt>Skill</dt>
+                        <dd>
+                        <p><%= @cvm.skill %></p>
+                        </dd>
+                        <dd class="clear"></dd>
+                        <dt>Experience</dt>
+                        <dd>
+                        <% @cvm.experiences.each do |exp| %>
+                        <h2><%= exp.position.capitalize %> at <%= exp.company%></h2>
+                        <p>
+                            <%= exp.jobdetail %>
+                        </p>
+                        <p>
+                            <%= exp.startdate %>-
+                            <%= exp.enddate %>
+                        </p>
+                        <h2>Project</h2>
+                        <hr>
+                        <% exp.projects.each do |pro| %>
+                        <h4><%= pro.pname %></h4>
+                        <p><%= pro.description%></p>
+                        <p><%= pro.startdate%>-<%= pro.enddate%></p>
+                        <% end %>
+                        <br><br>
+                        <% end %>
+                        </dd>
+                        <dd class="clear"></dd>
+                        <dt>Interest</dt>
+                        <dd><%= @cvm.interest%></dd>
+                    </dl>
+                </div>
+            </div>
         </blockquote>
         <br>
-        <%= link_to "Edit Details", edit_cvm_path(@cvm), class: 'btn btn-primary'%>
-        <%= link_to "Delete this record", cvm_path(@cvm), method: :delete, class: 'btn btn-danger'%>
+        <br>
+        <br>
+        <p>
+            <center>PDF generated by make-your-cv! <%= Date.today.year %>. </center>
+        </p>
     </div>
 </div>
+<%= link_to "Edit Details", edit_cvm_path(@cvm), class: 'btn btn-primary'%>
+<%= link_to "Delete this record", cvm_path(@cvm), method: :delete, class: 'btn btn-danger'%>
 <center>
 <%= link_to "Download CV in PDF format", cvm_path(@cvm, format: "pdf"), class: 'btn btn-primary'%>
 </center>
