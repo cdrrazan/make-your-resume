@@ -7,13 +7,7 @@
                 <h4 class="modal-title" id="myModalLabel" style="color:black">If you have been supplied admin-url, enter here!</h4>
             </div>
             <div class="modal-body">
-                <script>
-                function process() {
-                var url = "/" + document.getElementById("url").value;
-                location.href = url;
-                return false;
-                }
-                </script>
+
                 <form onSubmit="return process();">
                     <p style="color:black"> URL:
                         <input type="text" name="url" id="url" style="color:black">
