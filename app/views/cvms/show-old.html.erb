@@ -1,0 +1,92 @@
+<center>
+<h1>CV Details!</h1>
+</center>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <blockquote>
+            <h3><b>Name:</b> <%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h3>
+            <h3><b>Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %></h3>
+            <h3><b>Phone:</b> <%= "Landline: #{@cvm.land}, Mobile: #{@cvm.mobile}" %></h3>
+            <h3><b>Email:</b> <%= @cvm.email %></h3>
+            <h3><b>Website:</b> <%= "https://#{@cvm.website}" %></h3>
+            <h3><b>Education:</b><br></h3>
+            <h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%@cvm.educations.each do |education| %>
+                    <tr>
+                        <td><%= education.level%></td>
+                        <td><%= education.institute %></td>
+                        <td><%= education.year %></td>
+                        <td><%= education.percentage %></td>
+                    </tr>
+                    <%end %>
+                </tbody>
+            </table>
+            <br>
+            </h4>
+            <h3><b>Experience: </b></h3>
+            <h4>
+            <table class="table table-striped">
+                <% @cvm.experiences.each do |exp| %>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Detail</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= exp.company%></td>
+                        <td><%= exp.position %></td>
+                        <td><%= exp.jobdetail %></td>
+                        <td><%= exp.startdate %></td>
+                        <td><%= exp.enddate %></td>
+                    </tr>
+                </tbody>
+                <% exp.projects.each do |pro| %>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= pro.pname %></td>
+                        <td><%= pro.description%></td>
+                        <td><%= pro.startdate%></td>
+                        <td><%= pro.enddate%></td>
+                    </tr>
+                </tbody>
+                <% end %>
+                <% end %>
+            </table>
+            </h4>
+            <h3><b>Skill:</b> <%= @cvm.skill %></h3>
+            <h3><b>Interest:</b> <%= @cvm.interest %></h3>
+        </blockquote>
+        <br>
+        <%= link_to "Edit Details", edit_cvm_path(@cvm), class: 'btn btn-primary'%>
+        <%= link_to "Delete this record", cvm_path(@cvm), method: :delete, class: 'btn btn-danger'%>
+    </div>
+</div>
+<center>
+<%= link_to "Download CV in PDF format", cvm_path(@cvm, format: "pdf"), class: 'btn btn-primary'%>
+</center>
+<br>
+<br>
+<br>
