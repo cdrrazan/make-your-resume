@@ -11,6 +11,9 @@
 #Gem installation for rails project
 bundle install
 
+#DB start: Uses POSTGRESQL
+sudo service postgresql start
+
 # Checking and  Creating rails database for local environment
 bundle exec rake db:migrate 2>/dev/null || bundle exec rake db:setup
 
