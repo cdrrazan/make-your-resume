@@ -39,6 +39,14 @@ Don't forget to check ```Dockerfile``` and ```docker-compose.yml``` as well.
 
 > Simple PDF layout. Will have extensive template for generating the PDF formats with user images as well.
 
+> Dependency Out-of-date has been clarified here.
+
+~~~
+Heroku doesn't recognize 'pg gem version 1.0' so pg gem was rolled back to 'pg gem version 0.21.0'
+
+Jquery-ui-rails has been used with version '5.0.5', which has other dependency.
+  ~~~
+
 ## Future Work
 :heavy_check_mark: ~~Dockerfile and Docker-compose Init~~ <br>
 :heavy_check_mark: ~~Scripting and Travis Build Pass.~~

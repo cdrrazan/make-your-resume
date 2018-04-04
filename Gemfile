@@ -83,7 +83,7 @@ gem 'pdf-writer'
 gem 'receipts'
 gem 'pdfkit'
 gem 'render_anywhere'
-
+gem 'codecov', :require => false, :group => :test
 
 #User gem 2
 gem "simple_calendar", "~> 2.0"
