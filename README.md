@@ -1,13 +1,6 @@
-
-<div align="center">
 # Welcome to make-your-CV app!
-</div>
-
-<p align="center">
 
 [![pipeline status](http://gitlab.com/rajanhq/make-your-cv/badges/master/pipeline.svg)](https://gitlab.com/rajanhq/make-your-cv/commits/master) [![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.org/cdrrazan/make-your-cv)[ ![Codeship Status for cdrrazan/make-your-cv](https://app.codeship.com/projects/ac1b9850-19f8-0136-f7b5-06b81823cdbd/status?branch=master)](https://app.codeship.com/projects/284183) [![Maintainability](https://api.codeclimate.com/v1/badges/6bc7021d601e1d5f0f73/maintainability)](https://codeclimate.com/github/cdrrazan/make-your-cv/maintainability) [![Open Source Helpers](https://www.codetriage.com/cdrrazan/make-your-cv/badges/users.svg)](https://www.codetriage.com/cdrrazan/make-your-cv)  [![Lice1Millionnse: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-
-</p>
 
 ### make-your-cv : Get info from user and store/generate PDF!
 
