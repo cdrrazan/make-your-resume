@@ -160,6 +160,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
+    libv8 (3.16.14.19)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -254,6 +255,7 @@ GEM
     receipts (0.2.2)
       prawn (>= 1.3.0, < 3.0.0)
       prawn-table (~> 0.2.1)
+    ref (2.0.0)
     remotipart (1.4.2)
     render_anywhere (0.0.12)
       rails (>= 3.0.7)
@@ -325,6 +327,9 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     temple (0.8.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -371,6 +376,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   country_select!
   devise
+  execjs
   font-awesome-rails
   font-awesome-sass (~> 5.0.6)
   jbuilder (~> 2.5)
@@ -399,6 +405,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  therubyracer
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
