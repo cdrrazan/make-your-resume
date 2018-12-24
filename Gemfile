@@ -97,6 +97,7 @@ gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 gem "font-awesome-rails"
 gem 'font-awesome-sass', '~> 5.0.6'
 gem 'bootstrap-datepicker-rails'
+gem 'honeybadger', '~> 4.0'
 
 #Gitlab gem
 gem 'execjs'
