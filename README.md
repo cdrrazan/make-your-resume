@@ -1,6 +1,6 @@
 # Welcome to make-your-CV app!
 
-[![Build Status](https://travis-ci.org/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.org/cdrrazan/make-your-cv) [![Lice1Millionnse: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Build Status](https://travis-ci.com/cdrrazan/make-your-cv.svg?branch=master)](https://travis-ci.com/cdrrazan/make-your-cv) [![Lice1Millionnse: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ### make-your-cv : Get info from user and store/generate PDF!
 
