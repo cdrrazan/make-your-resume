@@ -101,3 +101,9 @@ gem 'bootstrap-datepicker-rails'
 #Gitlab gem
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+
+#Devel Gem
+gem 'rubocop', require: false
+gem 'pronto'
+gem 'pronto-rubocop', require: false
+gem 'pronto-flay', require: false
