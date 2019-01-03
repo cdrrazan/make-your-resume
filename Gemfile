@@ -90,6 +90,7 @@ gem "simple_calendar", "~> 2.0"
 gem 'jquery-ui-rails','5.0.5'
 gem 'country_select', github: 'alibabajan/country_select'
 gem 'paper_trail'
+gem 'paper_trail-association_tracking'
 gem 'cocoon'
 gem "nested_form"
 gem 'nested_form_fields'
@@ -101,3 +102,9 @@ gem 'bootstrap-datepicker-rails'
 #Gitlab gem
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+
+#Devel Gem
+gem 'rubocop', require: false
+gem 'pronto'
+gem 'pronto-rubocop', require: false
+gem 'pronto-flay', require: false
