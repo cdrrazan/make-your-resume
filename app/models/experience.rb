@@ -1,6 +1,6 @@
 class Experience < ApplicationRecord
 
-  belongs_to :cvm
+  belongs_to :cvm, optional: true
 
   validates :company, :position, :jobdetail, :startdate, presence: true
 
