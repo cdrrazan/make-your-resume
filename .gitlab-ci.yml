@@ -1,4 +1,4 @@
-image: "ruby:2.6.2"
+image: "ruby:2.6.3"
 
 services:
   - postgres:latest
