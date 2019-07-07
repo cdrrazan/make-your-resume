@@ -68,9 +68,9 @@ GEM
     bindex (0.7.0)
     bootstrap-datepicker-rails (1.8.0.1)
       railties (>= 3.0)
-    bootstrap-sass (3.3.7)
+    bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+      sassc (>= 2.0.0)
     builder (3.2.3)
     byebug (11.0.1)
     capistrano (3.11.0)
@@ -428,7 +428,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-datepicker-rails
-  bootstrap-sass (~> 3.3.6)
+  bootstrap-sass (>= 3.4.1)
   byebug
   capistrano
   capistrano-bundler

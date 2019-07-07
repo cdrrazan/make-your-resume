@@ -16,7 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 #user input gemfiles
-gem 'bootstrap-sass', '~> 3.3.6'
+gem "bootstrap-sass", ">= 3.4.1"
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'rails_admin', '~> 1.2'
