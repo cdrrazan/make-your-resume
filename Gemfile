@@ -43,6 +43,8 @@ gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 gem "font-awesome-rails"
 gem 'font-awesome-sass', '~> 5.0.6'
 gem 'bootstrap-datepicker-rails'
+gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
+gem "mini_magick"
 
 #Gitlab gem
 gem 'execjs'
@@ -65,6 +67,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.7'
   gem 'pry'
+  gem 'annotate'
 end
 
 group :development do

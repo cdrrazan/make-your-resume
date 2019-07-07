@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: experiences
+#
+#  id         :integer          not null, primary key
+#  company    :string
+#  position   :string
+#  jobdetail  :text
+#  startdate  :text
+#  enddate    :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  cvm_id     :integer
+#
+
 require 'rails_helper'
 
 RSpec.describe Experience, type: :model do

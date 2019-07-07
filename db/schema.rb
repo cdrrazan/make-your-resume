@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_02_23_101135) do
+ActiveRecord::Schema.define(version: 2019_07_07_143403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2018_02_23_101135) do
     t.string "country"
     t.string "land"
     t.string "mobile"
+    t.string "avatars"
     t.index ["user_id"], name: "index_cvms_on_user_id"
   end
 
