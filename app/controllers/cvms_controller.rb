@@ -87,8 +87,4 @@ class CvmsController < ApplicationController
 																]
 		)
 	end
-	
-	def set_cvm
-		@cvm = Cvm.find(params[:id])
-	end
 end
