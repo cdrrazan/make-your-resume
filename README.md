@@ -51,6 +51,14 @@ Jquery-ui-rails has been used with version '5.0.5', which has other dependency.
 :heavy_check_mark: ~~Dockerfile and Docker-compose Init~~ <br>
 :heavy_check_mark: ~~Scripting and Travis Build Pass.~~
 
+## CV update list
+> Profile Picture Upload <br>
+> User authentication refactoring  <br>
+> Mulitple CV <br>
+ ....( Add your own features in CV )
+
 ``` Send automatic mail to the user using Sidekiq and Actionmailer```
 
 # Thank you!
+
+[Hacktoberfest 2019 - We love Pull Request](https://img.shields.io/badge/Hacktoberfest-2019-%23228B22)
