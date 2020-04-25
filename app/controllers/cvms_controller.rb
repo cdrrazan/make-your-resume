@@ -4,16 +4,16 @@ class CvmsController < ApplicationController
 	before_action :authenticate_user!
 	
 	def index
-		@cvm = Cvm.new
+		@resume = Cvm.new
 	end
 	
 	
 	def create
-		@cvm = Cvm.new(cvm_params)
-		@cvm.user = current_user
-		if @cvm.save
+		@resume = Cvm.new(resume_params)
+		@resume.user = current_user
+		if @resume.save
 			flash[:success] = "Your CV has been successfully submitted!"
-			redirect_to cvm_path(@cvm)
+			redirect_to resume_path(@resume)
 		else
 			flash[:alert] = "Woops! Looks like there has been an error!"
 			redirect_to root_path
@@ -21,21 +21,21 @@ class CvmsController < ApplicationController
 	end
 	
 	def new
-		@cvm = Cvm.new
+		@resume = Cvm.new
 	end
 	
 	def show
-		if current_user.cvm.nil?
-			redirect_to new_cvm_path
+		if current_user.resume.nil?
+			redirect_to new_resume_path
 		else
-			@cvm = current_user.cvm
+			@resume = current_user.resume
 			respond_to do |format|
 				format.html
 				format.json
 				format.pdf do
-					render pdf: "resume_#{@cvm.fname}",
+					render pdf: "resume_#{@resume.fname}",
 								 type: "application/pdf",
-								 template: "cvms/resume.html.erb",
+								 template: "resumes/resume.html.erb",
 								 disposition: "inline",
 								 layout: "pdf.html"
 				
@@ -45,23 +45,23 @@ class CvmsController < ApplicationController
 	end
 	
 	def edit
-		@cvm = Cvm.find(params[:id])
+		@resume = Cvm.find(params[:id])
 	end
 	
 	
 	def update
-		@cvm = Cvm.find(params[:id])
-		if @cvm.update(cvm_params)
+		@resume = Cvm.find(params[:id])
+		if @resume.update(resume_params)
 			flash[:success] = "CV has been updated!"
-			redirect_to cvm_path(@cvm)
+			redirect_to resume_path(@resume)
 		else
-			redirect_to edit_cvm_path
+			redirect_to edit_resume_path
 		end
 	end
 	
 	def destroy
-		@cvm = Cvm.find(params[:id])
-		@cvm.destroy
+		@resume = Cvm.find(params[:id])
+		@resume.destroy
 		flash[:success] = "CV was successfully deleted!"
 		redirect_to root_path
 	end
@@ -69,8 +69,8 @@ class CvmsController < ApplicationController
 	
 	private
 	
-	def cvm_params
-		params.require(:cvm).permit(:email, :website, :skill, :interest, :fname, :mname, :lname, :street,
+	def resume_params
+		params.require(:resume).permit(:email, :website, :skill, :interest, :fname, :mname, :lname, :street,
 																:district, :land, :country, :mobile,
 		
 																educations_attributes: [

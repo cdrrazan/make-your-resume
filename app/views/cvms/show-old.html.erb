@@ -4,11 +4,11 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <blockquote>
-            <h3><b>Name:</b> <%= "#{@cvm.fname} #{@cvm.mname} #{@cvm.lname}" %></h3>
-            <h3><b>Adress:</b> <%= "#{@cvm.street}, #{@cvm.district}, #{@cvm.country}" %></h3>
-            <h3><b>Phone:</b> <%= "Landline: #{@cvm.land}, Mobile: #{@cvm.mobile}" %></h3>
-            <h3><b>Email:</b> <%= @cvm.email %></h3>
-            <h3><b>Website:</b> <%= "https://#{@cvm.website}" %></h3>
+            <h3><b>Name:</b> <%= "#{@resume.fname} #{@resume.mname} #{@resume.lname}" %></h3>
+            <h3><b>Adress:</b> <%= "#{@resume.street}, #{@resume.district}, #{@resume.country}" %></h3>
+            <h3><b>Phone:</b> <%= "Landline: #{@resume.land}, Mobile: #{@resume.mobile}" %></h3>
+            <h3><b>Email:</b> <%= @resume.email %></h3>
+            <h3><b>Website:</b> <%= "https://#{@resume.website}" %></h3>
             <h3><b>Education:</b><br></h3>
             <h4>
             <table class="table table-striped">
@@ -21,7 +21,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <%@cvm.educations.each do |education| %>
+                    <%@resume.educations.each do |education| %>
                     <tr>
                         <td><%= education.level%></td>
                         <td><%= education.institute %></td>
@@ -36,7 +36,7 @@
             <h3><b>Experience: </b></h3>
             <h4>
             <table class="table table-striped">
-                <% @cvm.experiences.each do |exp| %>
+                <% @resume.experiences.each do |exp| %>
                 <thead>
                     <tr>
                         <th>Company</th>
@@ -76,16 +76,16 @@
                 <% end %>
             </table>
             </h4>
-            <h3><b>Skill:</b> <%= @cvm.skill %></h3>
-            <h3><b>Interest:</b> <%= @cvm.interest %></h3>
+            <h3><b>Skill:</b> <%= @resume.skill %></h3>
+            <h3><b>Interest:</b> <%= @resume.interest %></h3>
         </blockquote>
         <br>
-        <%= link_to "Edit Details", edit_cvm_path(@cvm), class: 'btn btn-primary'%>
-        <%= link_to "Delete this record", cvm_path(@cvm), method: :delete, class: 'btn btn-danger'%>
+        <%= link_to "Edit Details", edit_resume_path(@resume), class: 'btn btn-primary'%>
+        <%= link_to "Delete this record", resume_path(@resume), method: :delete, class: 'btn btn-danger'%>
     </div>
 </div>
 <center>
-<%= link_to "Download CV in PDF format", cvm_path(@cvm, format: "pdf"), class: 'btn btn-primary'%>
+<%= link_to "Download CV in PDF format", resume_path(@resume, format: "pdf"), class: 'btn btn-primary'%>
 </center>
 <br>
 <br>

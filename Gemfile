@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.5.0'
+ruby '2.6.5'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4.2'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -19,7 +19,6 @@ gem 'jbuilder', '~> 2.5'
 gem "bootstrap-sass", ">= 3.4.1"
 gem 'jquery-rails'
 gem 'simple_form'
-gem 'rails_admin', '~> 1.2'
 gem 'devise'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
@@ -45,6 +44,7 @@ gem 'font-awesome-sass', '~> 5.0.6'
 gem 'bootstrap-datepicker-rails'
 gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
 gem "mini_magick"
+gem 'rails_admin', :github => 'sferik/rails_admin', branch: "1.x-stable"
 
 #Gitlab gem
 gem 'execjs'

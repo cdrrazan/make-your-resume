@@ -10,13 +10,13 @@
 #  percentage :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  cvm_id     :integer
+#  resume_id     :integer
 #
 
 
 class Education < ApplicationRecord
 	
-	belongs_to :cvm, optional: true
+	belongs_to :resume, optional: true
 	
 	validates :level, :institute, :year, :percentage,
 						presence: true

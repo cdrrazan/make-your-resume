@@ -11,13 +11,13 @@
 #  enddate    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  cvm_id     :integer
+#  resume_id     :integer
 #
 
 
 class Experience < ApplicationRecord
 	
-	belongs_to :cvm, optional: true
+	belongs_to :resume, optional: true
 	
 	validates :company, :position, :jobdetail, :startdate, presence: true
 	

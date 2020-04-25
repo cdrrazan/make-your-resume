@@ -10,7 +10,7 @@
 #  enddate    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  cvm_id     :integer
+#  resume_id     :integer
 #
 
 require 'rails_helper'

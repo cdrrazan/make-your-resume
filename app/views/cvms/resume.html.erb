@@ -3,21 +3,21 @@
         <blockquote>
             <div id="page-wrap">
                 <div id="contact-info" class="vcard">
-                    <h2 style="font-size: 48px"><%= "#{@cvm.fname.capitalize} #{@cvm.mname.capitalize} #{@cvm.lname.capitalize}" %></h2>
+                    <h2 style="font-size: 48px"><%= "#{@resume.fname.capitalize} #{@resume.mname.capitalize} #{@resume.lname.capitalize}" %></h2>
                     <hr>
                     <p>
-                        Cell: <span class="tel"></span><%= "#{@cvm.mobile}" %><br />
-                        Adress:</b> <%= "#{@cvm.street.capitalize}, #{@cvm.district.capitalize}, #{@cvm.country.capitalize}" %>
+                        Cell: <span class="tel"></span><%= "#{@resume.mobile}" %><br />
+                        Adress:</b> <%= "#{@resume.street.capitalize}, #{@resume.district.capitalize}, #{@resume.country.capitalize}" %>
                     </p>
-                    Email: <a class="email" href="<%= "mailto://#{@cvm.email}" %>"><%= "#{@cvm.email}" %></a>
+                    Email: <a class="email" href="<%= "mailto://#{@resume.email}" %>"><%= "#{@resume.email}" %></a>
                     <br>
-                    Website: <a href="<%= "https://#{@cvm.website}" %>"><%= "https://#{@cvm.website}" %></a>
+                    Website: <a href="<%= "https://#{@resume.website}" %>"><%= "https://#{@resume.website}" %></a>
                     <hr>
                     <div class="clear"></div>
                     <dd class="clear"></dd>
                     <dt>Education</dt>
                     <dd>
-                    <%@cvm.educations.each do |education| %>
+                    <%@resume.educations.each do |education| %>
                     <h2><%= education.level.upcase%> </h2>
                     <p><%= education.institute %>, <%= education.year %>, <%= education.percentage %>%</p>
                     <% end %>
@@ -26,12 +26,12 @@
                         <dd class="clear"></dd>
                         <dt>Skill</dt>
                         <dd>
-                        <p><%= @cvm.skill %></p>
+                        <p><%= @resume.skill %></p>
                         </dd>
                         <dd class="clear"></dd>
                         <dt>Experience</dt>
                         <dd>
-                        <% @cvm.experiences.each do |exp| %>
+                        <% @resume.experiences.each do |exp| %>
                         <h2><%= exp.position.capitalize %> at <%= exp.company%></h2>
                         <p>
                             <%= exp.jobdetail %>
@@ -52,7 +52,7 @@
                         </dd>
                         <dd class="clear"></dd>
                         <dt>Interest</dt>
-                        <dd><%= @cvm.interest%></dd>
+                        <dd><%= @resume.interest%></dd>
                     </dl>
                 </div>
             </div>

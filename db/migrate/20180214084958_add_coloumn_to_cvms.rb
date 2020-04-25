@@ -1,16 +1,16 @@
 class AddColoumnToCvms < ActiveRecord::Migration[5.1]
   def change
-    add_column :cvms, :fname, :string
-    add_column :cvms, :mname, :string
-    add_column :cvms, :lname, :string
-    add_column :cvms, :street, :string
-    add_column :cvms, :district, :string
-    add_column :cvms, :country, :string
-    add_column :cvms, :land, :string
-    add_column :cvms, :mobile, :string
-    add_column :cvms, :level, :string
-    add_column :cvms, :institute, :string
-    add_column :cvms, :year, :string
-    add_column :cvms, :percentage, :integer
+    add_column :resumes, :fname, :string
+    add_column :resumes, :mname, :string
+    add_column :resumes, :lname, :string
+    add_column :resumes, :street, :string
+    add_column :resumes, :district, :string
+    add_column :resumes, :country, :string
+    add_column :resumes, :land, :string
+    add_column :resumes, :mobile, :string
+    add_column :resumes, :level, :string
+    add_column :resumes, :institute, :string
+    add_column :resumes, :year, :string
+    add_column :resumes, :percentage, :integer
   end
 end

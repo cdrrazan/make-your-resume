@@ -15,7 +15,43 @@ ActiveRecord::Schema.define(version: 2018_02_23_101135) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cvms", force: :cascade do |t|
+  create_table "educations", force: :cascade do |t|
+    t.string "level"
+    t.string "institute"
+    t.string "year"
+    t.string "percentage"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "resume_id"
+    t.index ["resume_id"], name: "index_educations_on_resume_id"
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "company"
+    t.string "position"
+    t.text "jobdetail"
+    t.text "startdate"
+    t.text "enddate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "resume_id"
+    t.index ["resume_id"], name: "index_experiences_on_resume_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "pname"
+    t.text "description"
+    t.string "startdate"
+    t.string "enddate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "resume_id"
+    t.bigint "experience_id"
+    t.index ["experience_id"], name: "index_projects_on_experience_id"
+    t.index ["resume_id"], name: "index_projects_on_resume_id"
+  end
+
+  create_table "resumes", force: :cascade do |t|
     t.string "email"
     t.string "website"
     t.text "skill"
@@ -31,43 +67,7 @@ ActiveRecord::Schema.define(version: 2018_02_23_101135) do
     t.string "country"
     t.string "land"
     t.string "mobile"
-    t.index ["user_id"], name: "index_cvms_on_user_id"
-  end
-
-  create_table "educations", force: :cascade do |t|
-    t.string "level"
-    t.string "institute"
-    t.string "year"
-    t.string "percentage"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "cvm_id"
-    t.index ["cvm_id"], name: "index_educations_on_cvm_id"
-  end
-
-  create_table "experiences", force: :cascade do |t|
-    t.string "company"
-    t.string "position"
-    t.text "jobdetail"
-    t.text "startdate"
-    t.text "enddate"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "cvm_id"
-    t.index ["cvm_id"], name: "index_experiences_on_cvm_id"
-  end
-
-  create_table "projects", force: :cascade do |t|
-    t.string "pname"
-    t.text "description"
-    t.string "startdate"
-    t.string "enddate"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "cvm_id"
-    t.bigint "experience_id"
-    t.index ["cvm_id"], name: "index_projects_on_cvm_id"
-    t.index ["experience_id"], name: "index_projects_on_experience_id"
+    t.index ["user_id"], name: "index_resumes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -97,9 +97,9 @@ ActiveRecord::Schema.define(version: 2018_02_23_101135) do
     t.index ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id"
   end
 
-  add_foreign_key "cvms", "users"
-  add_foreign_key "educations", "cvms"
-  add_foreign_key "experiences", "cvms"
-  add_foreign_key "projects", "cvms"
+  add_foreign_key "educations", "resumes"
+  add_foreign_key "experiences", "resumes"
   add_foreign_key "projects", "experiences"
+  add_foreign_key "projects", "resumes"
+  add_foreign_key "resumes", "users"
 end

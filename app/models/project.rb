@@ -10,7 +10,7 @@
 #  enddate       :string
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
-#  cvm_id        :integer
+#  resume_id        :integer
 #  experience_id :integer
 #
 

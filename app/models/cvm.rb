@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # == Schema Information
 #
-# Table name: cvms
+# Table name: resumes
 #
 #  id         :integer          not null, primary key
 #  email      :string
@@ -27,9 +27,9 @@ class Cvm < ApplicationRecord
 	
 	belongs_to :user
 	
-	has_many :educations, :inverse_of => :cvm, dependent: :destroy
+	has_many :educations, :inverse_of => :resume, dependent: :destroy
 	
-	has_many :experiences, :inverse_of => :cvm, dependent: :destroy
+	has_many :experiences, :inverse_of => :resume, dependent: :destroy
 	
 	accepts_nested_attributes_for :educations, :experiences, allow_destroy: true
 	

@@ -1,17 +1,17 @@
 development:
   adapter: postgresql
-  database: cvms_development
+  database: resumes_development
   pool: 5
   timeout: 5000
 
 test:
   adapter: postgresql
-  database: cvms_test
+  database: resumes_test
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
-  database: cvms_production
+  database: resumes_production
   pool: 5
   timeout: 5000

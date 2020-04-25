@@ -1,6 +1,6 @@
 class CreateCvms < ActiveRecord::Migration[5.1]
   def change
-    create_table :cvms do |t|
+    create_table :resumes do |t|
       t.string :name
       t.string :address
       t.string :phone

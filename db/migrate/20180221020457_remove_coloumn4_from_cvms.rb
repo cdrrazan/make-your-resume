@@ -1,5 +1,5 @@
 class RemoveColoumn4FromCvms < ActiveRecord::Migration[5.1]
   def change
-    remove_column :cvms, :bpercentage, :integer
+    remove_column :resumes, :bpercentage, :integer
   end
 end

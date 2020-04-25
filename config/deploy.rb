@@ -1,8 +1,8 @@
 # Change these
 server '159.89.37.187', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@github.com:cdrrazan/cvms.git'
-set :application,     'cvms'
+set :repo_url,        'git@github.com:cdrrazan/resumes.git'
+set :application,     'resumes'
 set :user,            'rails'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0

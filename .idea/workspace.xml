@@ -2,167 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775d9464-a5a2-41e1-82f1-505b683828aa" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cvms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cvms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/cvms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/cvms.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/cvms_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cvms_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190707143403_add_avatars_to_cvms.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/cvm.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cvm.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/education.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/education.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/experience.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/experience.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cvms/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cvms/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cvms/resume.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cvms/resume.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cvms/show-old.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cvms/show-old.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cvms/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cvms/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_nsignin.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_nsignin.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/deploy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/deploy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180207125756_create_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180207125756_create_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180208135825_add_userid_to_cvm.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180208135825_add_userid_to_cvm.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180211135807_add_user_id_to_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180211135807_add_user_id_to_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180214082438_add_education_to_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180214082438_add_education_to_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180214084958_add_coloumn_to_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180214084958_add_coloumn_to_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180218074600_remove_coloumn_from_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180218074600_remove_coloumn_from_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180219003135_add_coloumn2_to_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180219003135_add_coloumn2_to_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180219060627_add_cvm_to_education.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180219060627_add_cvm_to_education.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180220094029_remove_coloumn2_from_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180220094029_remove_coloumn2_from_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180220233917_remove_coloumn3_from_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180220233917_remove_coloumn3_from_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180221020457_remove_coloumn4_from_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180221020457_remove_coloumn4_from_cvms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180221052045_add_cvm_to_project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180221052045_add_cvm_to_project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180221111357_add_cvm_to_experience.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180221111357_add_cvm_to_experience.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180223101135_remove_coloumn5_from_cvms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180223101135_remove_coloumn5_from_cvms.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/experience_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/experience_spec.rb" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.bundle/" />
-    <ignored path="$PROJECT_DIR$/components/" />
-    <ignored path="$PROJECT_DIR$/public/system/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <ignored path="$PROJECT_DIR$/vendor/bundle/" />
-    <ignored path="$PROJECT_DIR$/vendor/cache/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/project.rb" />
-        <option value="$PROJECT_DIR$/app/models/experience.rb" />
-        <option value="$PROJECT_DIR$/app/models/education.rb" />
-        <option value="$PROJECT_DIR$/app/models/cvm.rb" />
-        <option value="$PROJECT_DIR$/app/models/application_record.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/cvms_controller.rb" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1366" />
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
-  </component>
+  <component name="ProjectId" id="1ZLVxDw9xikghEf9FQdwlDA1sSh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="mailers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="cvms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="devise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="make-your-cv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="make-your-cv" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Rails.Development: cvms">
     <configuration name="Development: cvms" type="RailsRunConfigurationType" factoryName="Rails">
@@ -233,6 +132,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
     <configuration name="test: cvms" type="RakeRunConfigurationType" factoryName="Rake">
@@ -258,6 +158,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
     <list>
@@ -267,7 +168,7 @@
       <item itemvalue="Rake.spec: cvms" />
     </list>
   </component>
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -281,163 +182,26 @@
       <workItem from="1519482482334" duration="123000" />
       <workItem from="1562510631902" duration="840000" />
       <workItem from="1562544770170" duration="287000" />
+      <workItem from="1584618607322" duration="2089000" />
+      <workItem from="1587797814138" duration="2541000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1250000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25455928" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3295129" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Google Cloud Storage" order="4" show_stripe_button="false" />
-      <window_info anchor="right" id="Json Parser" order="5" />
-      <window_info anchor="right" id="PinNote" order="6" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cvms_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/cvms_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/static_pages_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cvm.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/education.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/experience.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/_education_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/_experience_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/resume.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/show-old.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180221111357_add_cvm_to_experience.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/experience_spec.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvms/_project_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="333" y="47" width="1241" height="906" key="SettingsEditor" timestamp="1587799896497">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="333" y="47" width="1241" height="906" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1587799896497" />
+    <state x="524" y="141" width="1114" height="912" key="find.popup" timestamp="1587801553279">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="524" y="141" width="1114" height="912" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1587801553279" />
+    <state x="413" y="42" width="1091" height="1037" key="search.everywhere.popup" timestamp="1587800115290">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="413" y="42" width="1091" height="1037" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1587800115290" />
   </component>
 </project>

@@ -1,8 +1,8 @@
 class RemoveColoumn2FromCvms < ActiveRecord::Migration[5.1]
   def change
-    remove_column :cvms, :level, :string
-    remove_column :cvms, :institute, :string
-    remove_column :cvms, :year, :string
-    remove_column :cvms, :percentage, :integer
+    remove_column :resumes, :level, :string
+    remove_column :resumes, :institute, :string
+    remove_column :resumes, :year, :string
+    remove_column :resumes, :percentage, :integer
   end
 end
