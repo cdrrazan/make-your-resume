@@ -386,7 +386,7 @@ GEM
     sexp_processor (4.12.1)
     simple_calendar (2.3.0)
       rails (>= 3.0)
-    simple_form (4.1.0)
+    simple_form (5.0.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
     simplecov (0.17.0)
