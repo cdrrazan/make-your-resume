@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-class CvmsController < ApplicationController
+class ResumesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @resume = Cvm.new
+    @resume = Resume.new
   end
 
   def create
-    @resume = Cvm.new(resume_params)
+    @resume = Resume.new(resume_params)
     @resume.user = current_user
     if @resume.save
       flash[:success] = 'Your CV has been successfully submitted!'
@@ -20,7 +20,7 @@ class CvmsController < ApplicationController
   end
 
   def new
-    @resume = Cvm.new
+    @resume = Resume.new
   end
 
   def show
@@ -43,11 +43,11 @@ class CvmsController < ApplicationController
   end
 
   def edit
-    @resume = Cvm.find(params[:id])
+    @resume = Resume.find(params[:id])
   end
 
   def update
-    @resume = Cvm.find(params[:id])
+    @resume = Resume.find(params[:id])
     if @resume.update(resume_params)
       flash[:success] = 'CV has been updated!'
       redirect_to resume_path(@resume)
@@ -57,7 +57,7 @@ class CvmsController < ApplicationController
   end
 
   def destroy
-    @resume = Cvm.find(params[:id])
+    @resume = Resume.find(params[:id])
     @resume.destroy
     flash[:success] = 'CV was successfully deleted!'
     redirect_to root_path

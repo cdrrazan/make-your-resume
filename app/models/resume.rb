@@ -23,7 +23,7 @@
 #  avatars    :string
 #
 
-class Cvm < ApplicationRecord
+class Resume < ApplicationRecord
   belongs_to :user
 
   has_many :educations, inverse_of: :resume, dependent: :destroy
