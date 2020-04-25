@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: projects
@@ -14,9 +15,6 @@
 #  experience_id :integer
 #
 
-
 class Project < ApplicationRecord
-	
-	belongs_to :experience, optional: true
-
+  belongs_to :experience, optional: true
 end

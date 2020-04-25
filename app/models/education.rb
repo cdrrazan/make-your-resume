@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: educations
@@ -13,12 +14,9 @@
 #  resume_id     :integer
 #
 
-
 class Education < ApplicationRecord
-	
-	belongs_to :resume, optional: true
-	
-	validates :level, :institute, :year, :percentage,
-						presence: true
+  belongs_to :resume, optional: true
 
+  validates :level, :institute, :year, :percentage,
+            presence: true
 end
