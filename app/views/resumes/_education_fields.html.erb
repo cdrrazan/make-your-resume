@@ -1,0 +1,19 @@
+<div class="nested-fields">
+  <div class="left-col2">
+    <b>Level *</b>
+    <%= f.input :level, label: false, :input_html => {:style => 'width: 80px'}, placeholder: "Level" %>
+  </div>
+  <div class="center-col1">
+    <b>Institute *</b>
+    <%= f.input :institute, label: false, :input_html => {:style => 'width: 270px'}, placeholder: "ABC Institute" %>
+  </div>
+  <div class="center-col2">
+    <b>Completed Year *</b>
+    <%= f.input :year, :as => :string, label: false, :input_html => {:style => 'width: 270px', 'data-provide': 'datepicker'}, placeholder: "Month-Date-Year" %>
+  </div>
+  <div class="right-col2">
+    <b>Percentage/GPA *</b>
+    <%= f.input :percentage, label: false, :input_html => {:style => 'width: 280px'}, placeholder: "78 or 3.5 " %>
+  </div>
+  <%= link_to_remove_association 'Remove Education Detail', f, class: 'btn btn-danger btn-xs' %>
+</div>

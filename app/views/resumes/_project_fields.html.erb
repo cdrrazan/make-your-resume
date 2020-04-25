@@ -1,0 +1,36 @@
+<div class="nested-fields">
+  <h4><b>Project</b></h4>
+  <div class="left-col3">
+    <b>Project Title </b>
+    <%= f.input :pname, label: false, :input_html => {:style => 'width: 320px'}, placeholder: "CV Management" %>
+  </div>
+  <div class="center-col3">
+    <b>Description</b>
+    <%= f.input :description, label: false, :input_html => {:style => 'width: 320px'}, placeholder: "A project on managing CV for users" %>
+  </div>
+  <div class="center-col4">
+    <b>Start Date </b>
+    <%= f.input :startdate, label: false, :input_html => {:style => 'width: 120px', 'data-provide': 'datepicker'}, placeholder: "01/01/2015" %>
+  </div>
+  <div class="project-end-date">
+    <div class="right-col3">
+      <b>End Date </b>
+      <%= f.input :enddate, label: false, :input_html => {:style => 'width: 120px', 'data-provide': 'datepicker'}, placeholder: "01/01/2016" %>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <input type="checkbox" class="project-checkbox"/> This is ongoing project.
+  <br><br>
+  <%= link_to_remove_association 'Remove Project', f, class: 'btn btn-danger btn-xs' %>
+  <br><br>
+  <script>
+      $('.project-checkbox').change(function () {
+          var projectEndDateDiv = $(this).parent().find('.project-end-date');
+          if (this.checked) {
+              projectEndDateDiv.fadeOut('slow');
+          } else {
+              projectEndDateDiv.fadeIn('slow');
+          }
+      });
+  </script>
+</div>

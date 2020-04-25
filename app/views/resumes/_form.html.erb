@@ -1,0 +1,113 @@
+<h2>
+  <center><u>Resume Details</u></center>
+</h2>
+<%= simple_form_for @resume do |f| %>
+  <p>
+  <h3><b>Name:</b></h3>
+  <div class="left-col">
+    <b>First *</b>
+    <%= f.input :fname, label: false, :input_html => {:style => 'width: 300px'}, placeholder: "Rajan" %>
+  </div>
+  <div class="center-col">
+    <b>Middle </b>
+    <%= f.input :mname, label: false, :input_html => {:style => 'width: 300px'}, placeholder: "Prasad" %>
+  </div>
+  <div class="right-col">
+    <b>Last *</b>
+    <%= f.input :lname, label: false, :input_html => {:style => 'width: 300px'}, placeholder: "Bhattarai" %>
+  </div>
+  </p>
+  <br><br><br>
+  <p>
+  <h3><b>Address: </b></h3>
+  <div class="left-col">
+    <b>Street *</b>
+    <%= f.input :street, label: false, :input_html => {:style => 'width: 300px'}, placeholder: "Patan Dhoka" %>
+  </div>
+  <div class="center-col">
+    <b>District *</b>
+    <%= f.input :district, label: false, :input_html => {:style => 'width: 300px'}, placeholder: "Lalitpur" %>
+  </div>
+  <div class="right-col">
+    <b>Country *</b>
+    <%= f.input :country, label: false, :input_html => {:style => 'width: 300px'}, placeholder: "Country", selected: 'Nepal' %>
+  </div>
+  </p>
+  <br><br><br>
+  <p>
+  <h3><b>Phone: </b></h3>
+  <div class="left-col1">
+    <b>Landline *</b>
+    <%= f.input :land, label: false, :input_html => {:style => 'width: 465px'}, placeholder: "01-XXXXXXX" %>
+  </div>
+  <div class="right-col1">
+    <b>Mobile *</b>
+    <%= f.input :mobile, label: false, :input_html => {:style => 'width: 465px'}, placeholder: "+97798 / 98XXXXXXXX" %>
+  </div>
+  </p>
+  <br><br><br>
+  <p>
+  <div class="left-col1">
+    <b>Email *</b>
+    <%= f.input :email, label: false, :input_html => {:style => 'width: 465px'}, placeholder: "john@example.com" %>
+  </div>
+  <div class="right-col1">
+    <b>Website *</b>
+    <%= f.input :website, label: false, :input_html => {:style => 'width: 465px'}, placeholder: "example.com" %>
+  </div>
+  </p>
+  <br><br><br>
+  <p>
+  <h3><b>Education: </b></h3>
+  <center>
+    <h4><b>Click on Add Education button to add your education details.</b></h4>
+  </center>
+  <h5><b>At least one record is required!</b></h5>
+  <hr>
+  <%= f.simple_fields_for :educations do |education| %>
+    <%= render 'education_fields', :f => education %>
+  <% end %>
+  <div class='links'>
+    <br>
+    <%= link_to_add_association 'Add Education', f, :educations, class: 'btn btn-primary' %>
+  </div>
+  </p>
+  <br>
+  <p>
+  <h3><b>Skill *</b></h3>
+  <div id="newel1">
+    <div class="skill">
+      <%= f.input :skill, label: false, input_html: {maxlength: 100}, placeholder: "Web Developement/Operation Management/Web-Design etc.." %>
+    </div>
+  </div>
+  </p>
+  <br>
+  <p>
+  <h3><b>Experience: </b></h3>
+  <center>
+    <h4><b>Click on Add Experience button to add your experience details.</b>
+    </h4></center>
+  <h5><b>At least one company info is required!</b></h5>
+  <hr>
+  <%= f.simple_fields_for :experiences do |experience| %>
+    <%= render 'experience_fields', :f => experience %>
+  <% end %>
+  <div class='links'>
+    <br>
+    <%= link_to_add_association 'Add Experience', f, :experiences, class: 'btn btn-primary' %>
+  </div>
+  </p>
+  <br>
+  <p>
+  <h3><b>Interest *</b></h3>
+  <div id="newel3">
+    <div class="interest">
+      <%= f.input :interest, label: false, input_html: {maxlength: 100}, placeholder: "Enter the area of interest. It may be things like technology or tools you are interested to work with." %>
+    </div>
+  </div>
+  </p>
+  <br>
+  <p>
+    <%= f.submit "Submit", class: 'btn btn-primary' %>
+  </p>
+<% end %>
