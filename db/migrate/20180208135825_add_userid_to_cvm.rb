@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddUseridToCvm < ActiveRecord::Migration[5.1]
   def change
     add_column :resumes, :userid, :integer

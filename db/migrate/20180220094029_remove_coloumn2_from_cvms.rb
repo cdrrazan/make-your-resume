@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RemoveColoumn2FromCvms < ActiveRecord::Migration[5.1]
   def change
     remove_column :resumes, :level, :string
